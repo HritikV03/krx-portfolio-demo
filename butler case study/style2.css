@@ -1,0 +1,1566 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@font-face {
+  font-family: "Planet N";
+  src: url(Font/planetn.ttf);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  /* Background Color */
+  --primary-color: #ffffff;
+  --secondary-color: #0a0a0a;
+
+  /* Text Font & Color */
+  --primary-font: "Poppins", sans-serif;
+  --secondary-font: "Planet", sans-serif;
+  --primary-text: #fcfcfc;
+  --secondary-text: #0a0a0a;
+}
+
+html,
+body {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: var(--primary-font);
+  background-color: var(--primary-color);
+}
+
+a {
+  text-decoration: none;
+}
+
+/* 1 Custom CSS */
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--primary-color);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--secondary-color);
+}
+
+/* Navbar Start */
+
+.header_wrapper .navbar {
+  -webkit-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+  background-color: #1e1e1e;
+}
+
+.header_wrapper .navbar-brand img {
+  position: relative;
+  left: 0.2em;
+  width: 70%;
+  height: auto;
+}
+
+.header_wrapper .navbar-toggler {
+  position: relative;
+  right: -0.4em;
+  border: none;
+}
+
+.header_wrapper .navbar-toggler:focus {
+  box-shadow: none;
+}
+
+.header_wrapper .nav-item {
+  text-align: center;
+  margin-top: 0.5em;
+}
+
+.header_wrapper .nav-item .nav-link {
+  position: relative;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--primary-color);
+  display: inline-block;
+}
+
+.header_wrapper .nav-item .nav-link::after {
+  position: absolute;
+  content: "";
+  left: 0;
+  width: 0;
+  height: 0.15em;
+  background: var(--primary-color);
+  transition: 0.3s;
+  bottom: 0;
+}
+
+.header_wrapper .nav-item .nav-link.active::after,
+.header_wrapper .nav-item .nav-link:hover::after {
+  width: 100%;
+}
+
+.header_wrapper .nav-item .nav-link.active,
+.header_wrapper .nav-item .nav-link:hover {
+  color: var(--primary-color);
+}
+
+#navbarNav ul li button {
+  border: none;
+  background: none;
+}
+
+.add-shadow {
+  box-shadow: 0px 16px 8px rgba(38, 36, 36, 0.1);
+}
+
+/* Navbar End */
+
+/* Banner Start */
+.banner_wrapper {
+  position: relative;
+  display: inline-flex;
+  min-width: 100%;
+  min-height: 160px;
+  background-color: #1e1e1e;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index: -1;
+  top: 1.2em;
+}
+
+.banner_wrapper .container {
+  display: inline-flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.banner_wrapper img {
+  position: relative;
+  width: 100%;
+  height: auto;
+  /* top: -1rem; */
+}
+
+/* Banner End */
+
+/* Case Study Content Start */
+
+.BCS_content {
+  position: relative;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
+.BCS_content .container1 {
+  position: relative;
+  display: block;
+  max-width: 1716px;
+  min-height: auto;
+  margin: auto;
+  padding: 0px 30px;
+  top: 1.82rem;
+}
+
+.BCS_content h1 {
+  position: relative;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 18px;
+  letter-spacing: 1.5px;
+  color: #0a0a0a;
+}
+
+.BCS_content .paraupdate {
+  position: relative;
+  top: 0.75rem !important;
+}
+
+h3 {
+  position: relative;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 1px;
+  color: #0a0a0a;
+}
+
+p {
+  position: relative;
+  width: auto;
+  height: auto;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.6px;
+  color: #0a0a0a;
+  top: 0.75rem;
+}
+
+.BCS_content .content2 {
+  position: relative;
+  top: 1.63em;
+}
+
+.BCS_content .content3 {
+  position: relative;
+  top: 3.26em;
+}
+
+.BCS_content .content4 {
+  position: relative;
+  top: 4.89em;
+}
+
+.BCS_content .content5 {
+  position: relative;
+  top: 6.52em;
+}
+
+.BCS_content .content6 {
+  position: relative;
+  top: 1.63em;
+}
+
+.BCS_content .content7 {
+  position: relative;
+  top: 3.26em;
+}
+
+.BCS_content .content7 img {
+  position: relative;
+  width: 100%;
+  height: auto;
+  top: 0.75rem;
+}
+
+.wire_frame {
+  position: relative;
+  max-width: 1716px;
+  margin: auto;
+  top: 14.23em;
+  padding: 0px 30px;
+}
+
+.wire_frame .content8 .grid1 {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 30px;
+  top: 12px;
+  place-items: center;
+  justify-items: center;
+}
+
+.wire_frame .content8 .grid1 img {
+  position: relative;
+  width: 112px;
+  height: auto;
+  box-shadow: rgba(90.2%, 90.2%, 90.2%, 0.3) 0px 0px 10px 10px;
+}
+
+/* --Hover Animation-- */
+
+.grid1 img {
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  transition-duration: 0.3s;
+  transition-property: transform;
+}
+
+.grid1 img:hover,
+.grid1 img:focus,
+.grid1 img:active {
+  transform: scale(1.1);
+}
+
+.user_interface {
+  position: relative;
+  max-width: 1716px;
+  margin: auto;
+  top: 16.86em;
+}
+
+.user_interface .content9 h3 {
+  padding: 0px 30px;
+}
+
+.ui_background {
+  position: relative;
+  width: 100%;
+  height: 89.2rem;
+  top: 3.25rem;
+  background-color: #161616;
+  background-size: cover;
+  padding: 0px 30px;
+}
+
+.user_interface .content9 .ui_background .grid2 {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 30px;
+  place-items: center;
+  justify-items: center;
+  top: -2.5rem;
+}
+
+.user_interface .content9 .ui_background .grid2 img {
+  position: relative;
+  width: 112px;
+  height: auto;
+}
+
+/* --Hover Animation-- */
+
+.grid2 img {
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  transition-duration: 0.3s;
+  transition-property: transform;
+}
+
+.grid2 img:hover,
+.grid2 img:focus,
+.grid2 img:active {
+  transform: scale(1.1);
+}
+
+.BCSbottom_content {
+  position: relative;
+  max-width: 1716px;
+  margin: auto;
+  padding: 0px 30px;
+  top: 24.48em;
+}
+
+.style_guide {
+  position: relative;
+  top: 1.63em;
+}
+
+h6 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 12px;
+  letter-spacing: 0.6px;
+  color: rgba(26, 5, 29, 1);
+}
+
+.BCSbottom_content .color_palette {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 2rem;
+  top: 1rem;
+}
+
+.square {
+  width: 56px;
+  height: 44px;
+}
+
+.colors1 {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  top: 0.75rem;
+}
+
+.content14 {
+  position: relative;
+  top: 3em;
+}
+
+.grid3 {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  top: 0.45em;
+}
+
+.content14 span {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 12px;
+  letter-spacing: 0.6px;
+  color: rgba(22, 22, 22, 1);
+}
+
+.content14 p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 12px;
+  letter-spacing: 0.6px;
+  color: rgba(22, 22, 22, 1);
+  opacity: 0.7;
+}
+
+.light_mode {
+  position: relative;
+  top: 6.0805rem;
+}
+
+.light_mode button {
+  position: relative;
+  background: #b1ebe7;
+  border-radius: 8px;
+  border: none;
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  transition-duration: 0.3s;
+  transition-property: transform;
+}
+
+.light_mode button span {
+  padding: 8px 16px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 12px;
+  color: #0a0a0a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.light_mode button:hover {
+  background-color: #0a0a0a;
+  transition: 0.3s;
+  transform: scale(1.1);
+}
+
+.light_mode button span:hover {
+  color:#b1ebe7;
+  ;
+}
+
+.content15 {
+  position: relative;
+  top: 7.96em;
+}
+
+.content16 {
+  position: relative;
+  top: 9.59em;
+}
+
+/* --Previous-Next Page Start-- */
+
+.container_prev_next {
+  position: relative;
+  top: -2.45rem;
+}
+
+.container_prev_next ul {
+  margin: 220px auto 0;
+  padding: 0;
+  list-style: none;
+  display: table;
+  width: 100%;
+  text-align: center;
+}
+
+.container_prev_next li {
+  display: table-cell;
+  position: relative;
+  padding: 15px 0;
+}
+
+.container_prev_next a {
+  color: #0a0a0a;
+  text-decoration: none;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  display: inline-block;
+  position: relative;
+}
+
+.container_prev_next a:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 0.12em;
+  position: absolute;
+  background: #0a0a0a;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+
+.container_prev_next a:hover:after {
+  width: 100%;
+  left: 0;
+}
+
+/* --Previous-Next Page End-- */
+
+/* --Contact Me Popup Start-- */
+
+/* The Contact (background) */
+.contact {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 100000 !important; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+/* Contact Content */
+.contact-content {
+  position: relative;
+  width: 100%;
+  height: 10rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #121212;
+  margin: auto;
+  padding: 0;
+  border: 1px solid #888;
+  width: 80%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s;
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  color: white;
+  font-size: 28px;
+  font-weight: bold;
+  right: 5px;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.contact-header {
+  position: relative;
+  width: 100%;
+  height: auto;
+  top: 0.5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0.1em;
+  color: #fcfcfc;
+}
+
+.contact-body {
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: auto;
+  top: 2.3em;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-body img {
+  position: relative;
+  width: 2rem;
+  height: auto;
+}
+
+.contact-footer {
+  position: relative;
+  width: 15rem;
+  height: auto;
+  top: 5.6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Planet N", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 12px;
+  letter-spacing: 0.06em;
+  color: #fcfcfc;
+}
+
+/* Skip Results Iframe
+    EDIT ON
+    /* SIBLI.contact-body out siblings around a hovered item */
+
+.contact-body {
+  visibility: hidden;
+}
+/* Prevents :hover from triggering in the gaps between items */
+
+.contact-body > * {
+  visibility: visible;
+}
+/* Brings the child items back in, even though the parent is `hidden` */
+
+.contact-body > * {
+  transition: opacity 150ms linear 100ms, transform 150ms ease-in-out 100ms;
+}
+/* Makes the fades smooth with a slight delay to prevent jumps as the mouse moves between items */
+
+.contact-body:hover > * {
+  opacity: 0.4;
+  transform: scale(0.9);
+}
+/* Fade out all items when the parent is hovered */
+
+.contact-body > *:hover {
+  opacity: 1;
+  transform: scale(1.3);
+  transition-delay: 0ms, 0ms;
+}
+/* Fade in the currently hovered item */
+
+.contact-body a:nth-of-type(odd) {
+  position: relative;
+  top: 1.3rem;
+}
+
+#hvr-grow-contact-me {
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  transition-duration: 0.3s;
+  transition-property: transform;
+}
+
+#hvr-grow-contact-me:hover,
+#hvr-grow-contact-me:focus,
+#hvr-grow-contact-me:active {
+  transform: scale(1);
+}
+
+/* --Contact Me Popup End-- */
+
+/* --TOP BUTTON START-- */
+
+#myBtn1 {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 10px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  background: transparent;
+}
+
+#myBtn1:hover,
+#myBtn1:focus {
+  background: transparent;
+  transition: all 0.5s;
+  transform: scale(1.5);
+}
+
+/* --TOP BUTTON END-- */
+
+@media screen and (min-width: 768px) {
+  /* Navbar Start */
+  .header_wrapper .navbar-brand img {
+    position: relative;
+    left: 0.9em;
+  }
+
+  .header_wrapper .navbar-toggler {
+    position: relative;
+    right: 0.2em;
+  }
+
+  /* Banner Start */
+  .banner_wrapper {
+    position: relative;
+    min-width: 100%;
+    min-height: 300px;
+    top: -2px;
+  }
+
+  .banner_wrapper img {
+    position: relative;
+    width: auto;
+    height: 450px;
+  }
+
+  /* Banner End */
+
+  /* Case Study Content Start */
+
+  .BCS_content .container1 {
+    position: relative;
+    padding: 0px 50px;
+    top: 2.6rem;
+  }
+
+  .BCS_content h1 {
+    position: relative;
+    font-size: 30px;
+    line-height: 32px;
+  }
+
+  .BCS_content .paraupdate {
+    position: relative;
+    top: 1.25em !important;
+  }
+
+  h3 {
+    position: relative;
+    font-size: 24px;
+    line-height: 30px;
+    letter-spacing: 1px;
+  }
+
+  p {
+    position: relative;
+    top: 1.25em;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+  }
+
+  .BCS_content .content2 {
+    position: relative;
+    top: 3.535em;
+  }
+
+  .BCS_content .content3 {
+    position: relative;
+    top: 7.07em;
+  }
+
+  .BCS_content .content4 {
+    position: relative;
+    top: 10.605em;
+  }
+
+  .BCS_content .content5 {
+    position: relative;
+    top: 14.14em;
+  }
+
+  .BCS_content .content6 {
+    position: relative;
+    top: 3.535em;
+  }
+
+  .BCS_content .content7 {
+    position: relative;
+    top: 7.07em;
+  }
+
+  .BCS_content .content7 img {
+    position: relative;
+    width: 100%;
+    height: auto;
+    top: 1.38rem;
+  }
+
+  .wire_frame {
+    position: relative;
+    max-width: 1716px;
+    margin: auto;
+    top: 28.318em;
+    padding: 0px 50px;
+  }
+
+  .wire_frame .content8 .grid1 {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px 90px;
+    top: 22px;
+  }
+
+  .wire_frame .content8 .grid1 img {
+    position: relative;
+    width: 160px;
+    height: auto;
+  }
+
+  .user_interface {
+    position: relative;
+    top: 32.82em;
+  }
+
+  .user_interface .content9 h3 {
+    padding: 0px 50px;
+  }
+
+  .ui_background {
+    position: relative;
+    width: 100%;
+    height: 79.5rem;
+    top: 4.85rem;
+  }
+
+  .user_interface .content9 .ui_background .grid2 {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px 50px;
+    place-items: center;
+    justify-items: center;
+    top: -3.5rem;
+  }
+
+  .user_interface .content9 .ui_background .grid2 img {
+    position: relative;
+    width: 160px;
+    height: auto;
+  }
+
+  .BCSbottom_content {
+    position: relative;
+    max-width: 1716px;
+    margin: auto;
+    padding: 0px 50px;
+    top: 44.257em;
+  }
+
+  .style_guide {
+    position: relative;
+    top: 3.535em;
+  }
+
+  .content14 {
+    position: relative;
+    top: 3em;
+  }
+
+  .BCSbottom_content .color_palette {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 2rem;
+    top: 2.29rem;
+  }
+
+  h6 {
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.6px;
+  }
+
+  .square {
+    position: relative;
+    width: 76px;
+    height: 64px;
+  }
+
+  .colors1 {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(4, 0.2fr);
+    top: 1.18em;
+  }
+
+  .content13 {
+    position: relative;
+    top: 1.06em;
+  }
+
+  .content14 {
+    position: relative;
+    top: 6.409em;
+  }
+
+  .content14 span {
+    font-size: 16px;
+    line-height: 16px;
+    letter-spacing: 0.6px;
+  }
+
+  .grid3 {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(3, .2fr);
+    top: 1.43em;
+  }
+
+  .content14 p {
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.6px;
+  }
+
+  .content14 p {
+    position: relative;
+    top: 1.83rem;
+  }
+
+  .light_mode {
+    position: relative;
+    top: 14.081rem;
+  }
+
+  .light_mode button span {
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  .content15 {
+    position: relative;
+    top: 17.21em;
+  }
+  
+  .content16 {
+    position: relative;
+    top: 20.75em;
+  }
+
+  /* --Previous-Next Page Start-- */
+
+.container_prev_next {
+  position: relative;
+  height: 6rem;
+  top: 10.6rem;
+}
+
+.container_prev_next a {
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.container_prev_next a:after {
+  top: 1.3em;
+}
+
+  /* --Previous-Next Page End-- */
+
+  /* Contact Content */
+  .contact-content {
+    position: relative;
+    height: 15rem;
+  }
+
+  .contact-header {
+    position: relative;
+    top: 1.2em;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  /* The Close Button */
+  .close {
+    position: absolute;
+    color: white;
+    font-size: 28px;
+    font-weight: bold;
+    right: 10px;
+    top: -8px;
+  }
+
+  .contact-body {
+    position: relative;
+    top: 4.2em;
+  }
+
+  .contact-body img {
+    position: relative;
+    width: 2.5rem;
+    height: auto;
+  }
+
+  .contact-body a:nth-of-type(odd) {
+    position: relative;
+    top: 1.5rem;
+  }
+
+  .contact-footer {
+    position: relative;
+    width: 18rem;
+    height: auto;
+    top: 9rem;
+    font-size: 10px;
+    line-height: 18px;
+  }
+}
+  
+
+@media screen and (min-width: 992px) {
+  .header_wrapper .navbar-brand img {
+    position: relative;
+    left: 1.25em;
+    width: 80%;
+    height: auto;
+    color: #0a0a0a;
+  }
+
+  .header_wrapper .nav-item {
+    text-align: center;
+    margin-top: 0.5em !important;
+    margin: 0 16px 0 50px;
+  }
+
+  /* Banner Start */
+  .banner_wrapper {
+    position: relative;
+    min-width: 100%;
+    min-height: 430px;
+  }
+
+  /* Banner End */
+
+}
+
+@media screen and (min-width: 1024px) {
+  /* Navbar Start */
+
+  .header_wrapper .navbar-brand img {
+    width: 4.125rem;
+    height: 1.4375rem;
+    left: 1.55em;
+  }
+
+  .header_wrapper .nav-item {
+    position: relative;
+    text-align: center;
+    margin: 0 23px 0 40px;
+  }
+
+  .header_wrapper .nav-item .nav-link {
+    font-size: 18px;
+    font-weight: 600;
+  }
+
+  /* Navbar End */
+
+  .banner_wrapper {
+    position: relative;
+    min-width: 100%;
+    min-height: 450px;
+  }
+
+  .banner_wrapper img {
+    position: relative;
+    width: 700px;
+    height: auto;
+  }
+
+  .BCS_content .container1 {
+    position: relative;
+    padding: 0px 100px;
+    top: 4.48em;
+  }
+
+  .wire_frame {
+    position: relative;
+    max-width: 1716px;
+    margin: auto;
+    top: 30.2em;
+    padding: 0px 100px;
+  }
+
+  .wire_frame .content8 .grid1 {
+    position: relative;
+    grid-gap: 50px 90px;
+    top: 42px;
+  }
+
+  .wire_frame .content8 .grid1 img {
+    position: relative;
+    width: 200px;
+    height: auto;
+  }
+
+  .user_interface {
+    position: relative;
+    top: 35.96em;
+  }
+
+  .user_interface .content9 h3 {
+    padding: 0px 100px;
+  }
+
+  .ui_background {
+    position: relative;
+    width: 100%;
+    height: 101.4em;
+    padding: 0px 100px;
+    top: 7.1rem;
+  }
+
+  .user_interface .content9 .ui_background .grid2 {
+    position: relative;
+    grid-gap: 50px 90px;
+    top: -4.5rem;
+  }
+
+  .user_interface .content9 .ui_background .grid2 img {
+    position: relative;
+    width: 200px;
+    height: auto;
+  }
+
+  .BCSbottom_content {
+    position: relative;
+    max-width: 1716px;
+    margin: auto;
+    padding: 0px 100px;
+    top: 50.7em;
+  }
+
+  .BCSbottom_content .color_palette {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+    top: 2.29rem;
+  }
+
+  .content13 {
+    position: relative;
+    top: 0em;
+  }
+
+  .colors1 {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .content14 {
+    position: relative;
+    top: 5.35em;
+  }
+
+  h6 {
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.6px;
+  }
+
+  .content14 span {
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 0.6px;
+  }
+
+  .light_mode {
+    position: relative;
+    top: 13.05rem;
+  }
+
+  .light_mode button span {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .content15 {
+    position: relative;
+    top: 16.18em;
+  }
+
+  .content16 {
+    position: relative;
+    top: 19.712em;
+  }
+
+    /* --Previous-Next Page Start-- */
+
+.container_prev_next {
+  position: relative;
+  height: 6rem;
+  top: 9.6rem;
+}
+
+.container_prev_next a {
+  font-size: 20px;
+  line-height: 24px;
+}
+
+  /* --Previous-Next Page End-- */
+
+  /* Contact Content */
+  .contact-content {
+    position: relative;
+    height: 25rem;
+  }
+
+  .contact-header {
+    position: relative;
+    top: 1em;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 36px;
+  }
+
+  /* The Close Button */
+  .close {
+    position: absolute;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    right: 8px;
+    top: -1.7rem;
+  }
+
+
+  .contact-body  {
+    position: relative;
+    top: 7rem;
+  }
+
+  .contact-body img {
+    position: relative;
+    width: 4.25rem;
+    height: auto;
+  }
+
+  .contact-body a:nth-of-type(odd) {
+    position: relative;
+    top: 2.5rem;
+  }
+
+  .contact-footer {
+    position: relative;
+    height: auto;
+    top: 15rem;
+    width: 40rem;
+    font-size: 24px;
+    line-height: 28px;
+  }
+
+}
+
+@media screen and (min-width: 1440px) {
+  .header_wrapper .nav-item {
+    position: relative;
+    text-align: center;
+    margin: 0 23px 0 53px;
+  }
+
+  /* Banner Start */
+  .banner_wrapper {
+    position: relative;
+    display: inline-flex;
+    min-width: 100%;
+    min-height: auto;
+  }
+
+  .banner_wrapper img {
+    position: relative;
+    width: auto;
+    height: 800px;
+  }
+
+  .BCS_content .container1 {
+    position: relative;
+    padding: 0px 250px;
+    top: 5.74em;
+  }
+
+  .BCS_content h1 {
+    position: relative;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 72px;
+    letter-spacing: 5px;
+  }
+
+  h3 {
+    position: relative;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 54px;
+    letter-spacing: 2px;
+  }
+
+  p {
+    position: relative;
+    letter-spacing: 1px;
+  }
+
+  .BCS_content .content2 {
+    position: relative;
+    top: 6.66em;
+  }
+
+  .BCS_content .content3 {
+    position: relative;
+    top: 13.35em;
+  }
+
+  .BCS_content .content4 {
+    position: relative;
+    top: 20em;
+  }
+
+  .BCS_content .content5 {
+    position: relative;
+    top: 26.7em;
+  }
+
+  .BCS_content .content6 {
+    position: relative;
+    top: 6.66em;
+  }
+
+  .BCS_content .content7 {
+    position: relative;
+    top: 13.35em;
+  }
+
+  .BCS_content .content7 img {
+    position: relative;
+    width: 100%;
+    height: auto;
+  }
+
+  .wire_frame {
+    position: relative;
+    max-width: 1716px;
+    margin: auto;
+    top: 53.45em;
+    padding: 0px 250px;
+  }
+
+  .wire_frame .content8 .grid1 {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px 60px;
+    top: 42px;
+  }
+
+  .wire_frame .content8 .grid1 img {
+    position: relative;
+    width: 272px;
+    height: auto;
+  }
+
+  .user_interface {
+    position: relative;
+    top: 62.35em;
+  }
+
+  .user_interface .content9 h3 {
+    position: relative;
+    padding: 0px 250px;
+  }
+
+  .ui_background {
+    position: relative;
+    padding: 0px 250px;
+    height: 134.1rem;
+    top: 15.25em !important;
+  }
+
+  .user_interface .content9 .ui_background .grid2 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px 60px;
+    top: -6.35rem;
+  }
+
+  .user_interface .content9 .ui_background .grid2 img {
+    position: relative;
+    width: 272px;
+    height: auto;
+  }
+
+  .BCSbottom_content {
+    position: relative;
+    max-width: 1716px;
+    margin: auto;
+    padding: 0px 250px;
+    top: 90.15em;
+  }
+
+  .style_guide {
+    position: relative;
+    top: 6.66em;
+  }
+
+  .square {
+    position: relative;
+    width: 86.08px;
+    height: 74.39px;
+    margin-right: 30px;
+  }
+
+  .content14 p {
+    position: relative;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.6px;
+  }
+
+  .light_mode {
+    position: relative;
+    top: 17.45rem;
+  }
+
+  .light_mode button span {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .content15 {
+    position: relative;
+    top: 23.7em;
+  }
+  
+  .content16 {
+    position: relative;
+    top: 30.4em;
+  }
+
+    /* --Previous-Next Page Start-- */
+
+.container_prev_next {
+  position: relative;
+  height: 10.5rem;
+  top: 23.4rem;
+}
+
+.container_prev_next a {
+  font-size: 28px;
+  line-height: 54px;
+}
+
+.container_prev_next a:after {
+  top: 1.6em;
+}
+
+  /* --Previous-Next Page End-- */
+
+    /* Contact Content */
+    .contact-content {
+      position: relative;
+      height: 30rem;
+    }
+  
+    .contact-header {
+      position: relative;
+      top: 0.82em;
+      font-weight: 500;
+      font-size: 48px;
+      line-height: 52px;
+    }
+  
+    /* The Close Button */
+    .close {
+      position: absolute;
+      color: white;
+      font-size: 50px;
+      font-weight: bold;
+      right: 8px;
+      top: -2.2rem;
+    }
+  
+    .contact-body {
+      position: relative;
+      top: 7.5rem;
+    }
+  
+    .contact-body img {
+      position: relative;
+      width: 5.25rem;
+      height: auto;
+    }
+  
+    .contact-body a:nth-of-type(odd) {
+      position: relative;
+      top: 3rem;
+    }
+  
+    .contact-footer {
+      position: relative;
+      height: auto;
+      top: 16.9rem;
+      width: 56.125rem;
+      font-size: 32px;
+      line-height: 40px;
+    }
+
+}
+
+@media screen and (min-width: 1716px) {
+  .header_wrapper .navbar-brand img {
+    position: relative;
+    left: -5.3em;
+  }
+  .header_wrapper .nav-item {
+    position: relative;
+    right: -8.7em;
+  }
+}

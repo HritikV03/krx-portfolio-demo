@@ -1,0 +1,1572 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@font-face {
+  font-family: "Planet N";
+  src: url(Font/planetn.ttf);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  /* Background Color */
+  --primary-color: #fdfbfb;
+  --secondary-color: #0a0a0a;
+
+  /* Text Font & Color */
+  --primary-font: "Poppins", sans-serif;
+  --secondary-font: "Planet", sans-serif;
+  --primary-text: #fcfcfc;
+  --secondary-text: #0a0a0a;
+}
+
+html,
+body {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: var(--primary-font);
+  background-color: var(--primary-color);
+}
+
+a {
+  text-decoration: none;
+}
+
+/* 1 Custom CSS */
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--primary-color);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--secondary-color);
+}
+
+/* Navbar Start */
+
+.header_wrapper .navbar {
+  -webkit-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+  background-color: #e9f4fe;
+}
+
+.header_wrapper .navbar-brand img {
+  position: relative;
+  left: 0.2em;
+  width: 70%;
+  height: auto;
+  color: #0a0a0a;
+}
+
+.header_wrapper .navbar-toggler {
+  position: relative;
+  right: -0.4em;
+  border: none;
+}
+
+.header_wrapper .navbar-toggler:focus {
+  box-shadow: none;
+}
+
+.header_wrapper .nav-item {
+  text-align: center;
+  margin-top: 0.5em;
+}
+
+.header_wrapper .nav-item .nav-link {
+  position: relative;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--secondary-color);
+  display: inline-block;
+}
+
+.header_wrapper .nav-item .nav-link::after {
+  position: absolute;
+  content: "";
+  left: 0;
+  width: 0;
+  height: 0.2em;
+  background: var(--secondary-color);
+  transition: 0.3s;
+  bottom: 0;
+}
+
+.header_wrapper .nav-item .nav-link.active::after,
+.header_wrapper .nav-item .nav-link:hover::after {
+  width: 100%;
+}
+
+.header_wrapper .nav-item .nav-link.active,
+.header_wrapper .nav-item .nav-link:hover {
+  color: var(--secondary-color);
+}
+
+#navbarNav ul li button {
+  border: none;
+  background: none;
+}
+
+.add-shadow {
+  box-shadow: 0px 16px 8px rgba(38, 36, 36, 0.1);
+}
+
+/* Navbar End */
+
+/* Banner Start */
+.banner_wrapper {
+  position: relative;
+  display: inline-flex;
+  min-width: 100%;
+  min-height: 200px;
+  background-color: #e9f4fe;
+  background-image: url(images1/iphonebg.webp);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  top: 1.2em;
+}
+
+.banner_wrapper .container {
+  display: inline-flex;
+  width: 100%;
+  justify-content: center;
+}
+
+/* Banner End */
+
+/* Case Study Content Start */
+
+.CS_content {
+  position: relative;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
+.CS_content .container1 {
+  position: relative;
+  display: block;
+  max-width: 1716px;
+  min-height: auto;
+  margin: auto;
+  padding: 20px 30px;
+}
+
+.CS_content h1 {
+  position: relative;
+  top: 0.65em;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 1.5px;
+  color: #0a0a0a;
+}
+
+.CS_content .paraupdate {
+  position: relative;
+  top: 1.3em !important;
+}
+
+h3 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 1px;
+  color: #0a0a0a;
+}
+
+p {
+  position: relative;
+  top: 0.8em;
+  width: auto;
+  height: auto;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.6px;
+  color: #0a0a0a;
+}
+
+.CS_content .content2 {
+  position: relative;
+  top: 1.84em;
+}
+
+.CS_content .content3 {
+  position: relative;
+  top: 3.28em;
+}
+
+.CS_content .content4 {
+  position: relative;
+  top: 4.75em;
+}
+
+.CS_content .content5 {
+  position: relative;
+  top: 6.2em;
+}
+
+.CS_content .content6 {
+  position: relative;
+  top: 7.65em;
+}
+
+.CS_content .content7 {
+  position: relative;
+  top: 1.45em;
+}
+
+.CS_content .content8 {
+  position: relative;
+  top: 2.9em;
+}
+
+.CS_content .content8 img {
+  position: relative;
+  width: 100%;
+  height: 195px;
+  top: 0.7em;
+}
+.wire_frame {
+  position: relative;
+  max-width: 1716px;
+  margin: auto;
+  top: 11.9em;
+  padding: 0px 30px;
+}
+
+.wire_frame .content9 .grid1 {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 30px;
+  top: 8px;
+  place-items: center;
+  justify-items: center;
+}
+
+.wire_frame .content9 .grid1 img {
+  position: relative;
+  width: 112px;
+  height: 243px;
+  box-shadow: rgba(90.2%, 90.2%, 90.2%, 0.3) 0px 0px 10px 10px;
+}
+
+/* --Hover Animation-- */
+
+.grid1 img {
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  transition-duration: 0.3s;
+  transition-property: transform;
+}
+
+.grid1 img:hover,
+.grid1 img:focus,
+.grid1 img:active {
+  transform: scale(1.1);
+}
+
+.user_interface {
+  position: relative;
+  max-width: 1716px;
+  margin: auto;
+  top: 13.8em;
+}
+
+.user_interface .content10 h3 {
+  padding: 0px 30px;
+}
+
+.ui_background {
+  position: relative;
+  width: 100%;
+  height: 117.8rem;
+  top: 5.9rem;
+  background-color: rgba(61, 115, 221, 1);
+  background-size: cover;
+  padding: 0px 30px;
+}
+
+.user_interface .content10 .ui_background .grid2 {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 30px;
+  place-items: center;
+  justify-items: center;
+  top: -4.5rem;
+}
+
+.user_interface .content10 .ui_background .grid2 img {
+  position: relative;
+  width: 112px;
+  height: 227px;
+}
+
+.user_interface .content10 .ui_background .grid2 .userinterface15 {
+  position: relative;
+  left: 60%;
+}
+
+/* --Hover Animation-- */
+
+.grid2 img {
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  transition-duration: 0.3s;
+  transition-property: transform;
+}
+
+.grid2 img:hover,
+.grid2 img:focus,
+.grid2 img:active {
+  transform: scale(1.1);
+}
+
+.CSbottom_content {
+  position: relative;
+  max-width: 1716px;
+  margin: auto;
+  padding: 0px 30px;
+  top: 26em;
+}
+
+.content11 {
+  position: relative;
+}
+
+.content11 p {
+  position: relative;
+  top: 1em !important;
+}
+
+.content12 {
+  position: relative;
+  top: 1.65em;
+}
+
+.content12 p {
+  position: relative;
+  top: 1em !important;
+}
+
+.content13 {
+  position: relative;
+  top: 2em;
+}
+
+h6 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 34px;
+  letter-spacing: 0.6px;
+  color: rgba(26, 5, 29, 1);
+}
+
+.square {
+  width: 56px;
+  height: 44px;
+}
+
+.colors1 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.content14 {
+  position: relative;
+  top: 2.55em;
+}
+
+.content15 {
+  position: relative;
+  top: 3.1em;
+}
+
+.grid3 {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  top: -0.2em;
+}
+
+.content15 span {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 12px;
+  letter-spacing: 0.6px;
+  color: rgba(22, 22, 22, 1);
+}
+
+.content15 p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 12px;
+  letter-spacing: 0.6px;
+  color: rgba(22, 22, 22, 1);
+  opacity: 0.7;
+}
+
+.content16 {
+  position: relative;
+  top: 4.3em;
+}
+
+.content16 p {
+  position: relative;
+  top: 1em !important;
+}
+
+/* --Next Page Start-- */
+
+.next_page {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.next_page a {
+  color: #0a0a0a;
+}
+
+.next_page a span {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.next {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.next_position {
+  position: relative;
+  height: 3.45em;
+  top: 5.75em;
+}
+
+.next .next_page .active_next::after {
+  position: absolute;
+  content: "";
+  left: 0;
+  width: 0;
+  height: 0.3em;
+  background: var(--secondary-color);
+  transition: 0.3s;
+  bottom: 0;
+}
+
+.next .next_page .active_next:hover::after {
+  width: 95%;
+}
+
+.next .next_page .active_next:hover {
+  color: var(--secondary-color);
+}
+
+/* --Next Page End-- */
+
+/* --Contact Me Popup Start-- */
+
+/* The Contact (background) */
+.contact {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index:  100000 !important; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+/* Contact Content */
+.contact-content {
+  position: relative;
+  width: 100%;
+  height: 10rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #121212;
+  margin: auto;
+  padding: 0;
+  border: 1px solid #888;
+  width: 80%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s;
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  color: white;
+  font-size: 28px;
+  font-weight: bold;
+  right: 5px;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.contact-header {
+  position: relative;
+  width: 100%;
+  height: auto;
+  top: 0.5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0.1em;
+  color: #fcfcfc;
+}
+
+.contact-body {
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: auto;
+  top: 2.3em;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-body img {
+  position: relative;
+  width: 2rem;
+  height: auto;
+}
+
+.contact-footer {
+  position: relative;
+  width: 15rem;
+  height: auto;
+  top: 5.6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Planet N", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 18px;
+  letter-spacing: 0.06em;
+  color: #fcfcfc;
+}
+
+/* Skip Results Iframe
+EDIT ON
+/* SIBLI.contact-body out siblings around a hovered item */
+
+.contact-body {
+  visibility: hidden;
+}
+/* Prevents :hover from triggering in the gaps between items */
+
+.contact-body > * {
+  visibility: visible;
+}
+/* Brings the child items back in, even though the parent is `hidden` */
+
+.contact-body > * {
+  transition: opacity 150ms linear 100ms, transform 150ms ease-in-out 100ms;
+}
+/* Makes the fades smooth with a slight delay to prevent jumps as the mouse moves between items */
+
+.contact-body:hover > * {
+  opacity: 0.4;
+  transform: scale(0.9);
+}
+/* Fade out all items when the parent is hovered */
+
+.contact-body > *:hover {
+  opacity: 1;
+  transform: scale(1.3);
+  transition-delay: 0ms, 0ms;
+}
+/* Fade in the currently hovered item */
+
+.contact-body a:nth-of-type(odd) {
+  position: relative;
+  top: 1.3rem;
+}
+
+#hvr-grow-contact-me {
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  transition-duration: 0.3s;
+  transition-property: transform;
+}
+
+#hvr-grow-contact-me:hover,
+#hvr-grow-contact-me:focus,
+#hvr-grow-contact-me:active {
+  transform: scale(1);
+}
+
+/* --Contact Me Popup End-- */
+
+/* --TOP BUTTON START-- */
+
+#myBtn1 {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 10px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  background: transparent;
+}
+
+#myBtn1:hover,
+#myBtn1:focus {
+  background: transparent;
+  transition: all 0.5s;
+  transform: scale(1.5);
+}
+
+/* --TOP BUTTON END-- */
+
+@media screen and (min-width: 768px) {
+  /* Navbar Start */
+  .header_wrapper .navbar-brand img {
+    position: relative;
+    left: 0.9em;
+  }
+
+  .header_wrapper .navbar-toggler {
+    position: relative;
+    right: 0.2em;
+  }
+
+  /* Banner Start */
+  .banner_wrapper {
+    position: relative;
+    min-width: 100%;
+    min-height: 450px;
+  }
+
+  .banner_wrapper img {
+    position: relative;
+    width: 600px;
+    height: 400px;
+  }
+
+  /* Banner End */
+
+  /* Case Study Content Start */
+
+  .CS_content .container1 {
+    position: relative;
+    padding: 20px 50px;
+    top: -0.4em;
+  }
+
+  .CS_content h1 {
+    position: relative;
+    font-size: 30px;
+    line-height: 40px;
+    top: 0.75em;
+  }
+
+  .CS_content .paraupdate {
+    position: relative;
+    top: 1.5em !important;
+  }
+
+  h3 {
+    position: relative;
+    top: 0.8em;
+    font-size: 24px;
+    line-height: 36px;
+    letter-spacing: 1px;
+  }
+
+  p {
+    position: relative;
+    top: 1.3em;
+    font-size: 18px;
+    line-height: 30px;
+    letter-spacing: 0.5px;
+  }
+
+  .CS_content .content8 img {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    top: 2em;
+  }
+
+  .wire_frame {
+    position: relative;
+    padding: 0px 50px;
+    top: 12.5em;
+  }
+
+  .wire_frame .content9 .grid1 {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px 90px;
+    top: 32px;
+  }
+
+  .wire_frame .content9 .grid1 img {
+    position: relative;
+    width: 160px;
+    height: 340px;
+  }
+
+  .user_interface {
+    position: relative;
+    top: 15em;
+  }
+
+  .user_interface .content10 h3 {
+    padding: 0px 50px;
+  }
+
+  .ui_background {
+    position: relative;
+    width: 100%;
+    height: 101em;
+    top: 8.7rem;
+    background-color: rgba(61, 115, 221, 1);
+    background-size: cover;
+  }
+
+  .user_interface .content10 .ui_background .grid2 {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px 50px;
+    place-items: center;
+    justify-items: center;
+    top: -6.8rem;
+  }
+
+  .user_interface .content10 .ui_background .grid2 img {
+    position: relative;
+    width: 160px;
+    height: 340px;
+  }
+
+  .user_interface .content10 .ui_background .grid2 .userinterface15 {
+    position: relative;
+    left: 0;
+  }
+
+  .CSbottom_content {
+    position: relative;
+    top: 3.5em;
+    padding: 0px 50px;
+    top: 29.8em;
+  }
+
+  .content11 {
+    position: relative;
+  }
+
+  .content11 p {
+    position: relative;
+    top: 1.8em !important;
+  }
+
+  .content12 {
+    position: relative;
+    top: 2.2em;
+  }
+
+  .content12 p {
+    position: relative;
+    top: 1.8em !important;
+  }
+
+  .content13 {
+    position: relative;
+    top: 4.2em;
+  }
+
+  .content14 {
+    position: relative;
+    top: 5.8em;
+  }
+
+  .square {
+    position: relative;
+    width: 76px;
+    height: 64px;
+  }
+
+  .colors1 {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    top: 0.3em;
+  }
+  .content15 {
+    position: relative;
+    top: 7.5em;
+  }
+
+  h6 {
+    font-size: 14px;
+    line-height: 34px;
+    letter-spacing: 0.6px;
+  }
+
+  .content15 span {
+    font-size: 16px;
+    line-height: 16px;
+    letter-spacing: 0.6px;
+  }
+
+  .grid3 {
+    position: relative;
+    top: -0.05em;
+  }
+
+  .content15 p {
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.6px;
+  }
+
+  .content16 {
+    position: relative;
+    top: 8.85em;
+  }
+
+  .content16 p {
+    position: relative;
+    top: 1.8em !important;
+  }
+
+  .next_position {
+    position: relative;
+    height: 3em;
+    top: 13em;
+  }
+
+  .next_page a span {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .next .next_page .active_next::after {
+    position: absolute;
+    height: 0.2em;
+  }
+
+  /* Contact Content */
+  .contact-content {
+    position: relative;
+    height: 15rem;
+  }
+
+  .contact-header {
+    position: relative;
+    top: 1.2em;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  /* The Close Button */
+  .close {
+    position: absolute;
+    color: white;
+    font-size: 28px;
+    font-weight: bold;
+    right: 10px;
+    top: -8px;
+  }
+
+  .contact-body {
+    position: relative;
+    top: 4.2rem;
+  }
+
+  .contact-body img {
+    position: relative;
+    width: 2.5rem;
+    height: auto;
+  }
+
+  .contact-body a:nth-of-type(odd) {
+    position: relative;
+    top: 1.5rem;
+  }
+
+  .contact-footer {
+    position: relative;
+    width: 18rem;
+    height: auto;
+    top: 9rem;
+    font-size: 10px;
+    line-height: 18px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .header_wrapper .navbar-brand img {
+    position: relative;
+    left: 1.25em;
+    width: 80%;
+    height: auto;
+    color: #0a0a0a;
+  }
+
+  .header_wrapper .nav-item {
+    text-align: center;
+    margin-top: 0.5em !important;
+    margin: 0 16px 0 50px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  /* Navbar Start */
+
+  .header_wrapper .navbar-brand img {
+    width: 4.125rem;
+    height: 1.4375rem;
+    left: 1.55em;
+  }
+
+  .header_wrapper .nav-item {
+    position: relative;
+    text-align: center;
+    margin: 0 23px 0 40px;
+  }
+
+  .header_wrapper .nav-item .nav-link {
+    font-size: 18px;
+    font-weight: 600;
+  }
+
+  /* Navbar End */
+
+  .CS_content .container1 {
+    position: relative;
+    padding: 20px 100px;
+    top: 2em;
+  }
+
+  .CS_content .paraupdate {
+    position: relative;
+    top: 2.5em !important;
+  }
+
+  p {
+    position: relative;
+    top: 2.4em;
+  }
+
+  .CS_content .content2 {
+    position: relative;
+    top: 4.5em;
+  }
+
+  .CS_content .content3 {
+    position: relative;
+    top: 8.8em;
+  }
+
+  .CS_content .content4 {
+    position: relative;
+    top: 13.1em;
+  }
+
+  .CS_content .content5 {
+    position: relative;
+    top: 17.4em;
+  }
+
+  .CS_content .content6 {
+    position: relative;
+    top: 21.7em;
+  }
+
+  .CS_content .content7 {
+    position: relative;
+    top: 4.3em;
+  }
+
+  .CS_content .content8 {
+    position: relative;
+    top: 9.8em;
+  }
+
+  .CS_content .content8 img {
+    position: relative;
+    width: 100%;
+    height: 633px;
+    top: 1.4em;
+  }
+
+  .wire_frame {
+    position: relative;
+    padding: 0px 100px;
+    top: 33.7em;
+  }
+
+  .wire_frame .content9 .grid1 {
+    position: relative;
+    grid-gap: 50px 90px;
+    top: 62px;
+  }
+
+  .wire_frame .content9 .grid1 img {
+    position: relative;
+    width: 200px;
+    height: 400px;
+  }
+
+  .user_interface {
+    position: relative;
+    top: 40.2em;
+  }
+
+  .user_interface .content10 h3 {
+    position: relative;
+    padding: 0px 100px;
+  }
+
+  .ui_background {
+    position: relative;
+    width: 100%;
+    height: 124em;
+    padding: 0px 100px;
+    top: 10.75rem;
+  }
+
+  .user_interface .content10 .ui_background .grid2 {
+    position: relative;
+    grid-gap: 50px 90px;
+  }
+
+  .user_interface .content10 .ui_background .grid2 img {
+    position: relative;
+    width: 200px;
+    height: 400px;
+  }
+
+  .CSbottom_content {
+    position: relative;
+    padding: 0px 100px;
+    top: 60.2em;
+  }
+
+  .content11 p {
+    position: relative;
+    top: 2.3em !important;
+  }
+
+  .content12 {
+    position: relative;
+    top: 4.2em;
+  }
+
+  .content12 p {
+    position: relative;
+    top: 2.3em !important;
+  }
+
+  .color_palette {
+    position: relative;
+    display: flex;
+    place-content: space-between;
+  }
+
+  .content13 {
+    position: relative;
+    top: 7.6em;
+  }
+
+  .content14 {
+    position: relative;
+    top: 7.6em;
+  }
+
+  .colors1 {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    top: 1.4em;
+  }
+
+  .square {
+    position: relative;
+    width: 76px;
+    height: 64px;
+    margin-right: 20px;
+  }
+
+  .content15 {
+    position: relative;
+    top: 10.9em;
+  }
+
+  h6 {
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.6px;
+  }
+
+  .content15 span {
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 0.6px;
+  }
+
+  .grid3 {
+    position: relative;
+    grid-template-columns: repeat(3, 0.2fr);
+    top: 1.2em;
+  }
+
+  .content16 {
+    position: relative;
+    top: 15.5em;
+  }
+
+  .content16 p {
+    position: relative;
+    top: 2.3em !important;
+  }
+
+  .next_page a span {
+    font-size: 20px;
+    line-height: 34px;
+  }
+
+  .next_position {
+    position: relative;
+    height: 5.3em;
+    top: 20.7em;
+  }
+
+  .next .next_page .active_next::after {
+    position: absolute;
+    height: 0.2em;
+  }
+
+  /* Contact Content */
+  .contact-content {
+    position: relative;
+    height: 25rem;
+  }
+
+  .contact-header {
+    position: relative;
+    top: 1em;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 36px;
+  }
+
+  /* The Close Button */
+  .close {
+    position: absolute;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    right: 8px;
+    top: -1.7rem;
+  }
+
+  .contact-body  {
+    position: relative;
+    top: 7rem;
+  }
+
+  .contact-body img {
+    position: relative;
+    width: 4.25rem;
+    height: auto;
+  }
+
+  .contact-body a:nth-of-type(odd) {
+    position: relative;
+    top: 2.5rem;
+  }
+
+  .contact-footer {
+    position: relative;
+    height: auto;
+    top: 15rem;
+    width: 40rem;
+    font-size: 24px;
+    line-height: 28px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .header_wrapper .nav-item {
+    position: relative;
+    text-align: center;
+    margin: 0 23px 0 53px;
+  }
+
+  /* Banner Start */
+  .banner_wrapper {
+    position: relative;
+    display: inline-flex;
+    min-width: 100%;
+    min-height: 770px;
+    background-color: #e9f4fe;
+  }
+
+  .CS_content .container1 {
+    position: relative;
+    padding: 20px 250px;
+    top: 2.2em;
+  }
+
+  .CS_content h1 {
+    position: relative;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 72px;
+    letter-spacing: 5px;
+  }
+
+  .CS_content .paraupdate {
+    position: relative;
+    top: 3.3em !important;
+  }
+
+  h3 {
+    position: relative;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 54px;
+    letter-spacing: 2px;
+  }
+
+  p {
+    position: relative;
+    top: 2.85em;
+    letter-spacing: 1px;
+  }
+
+  .CS_content .content2 {
+    position: relative;
+    top: 7.2em;
+  }
+
+  .CS_content .content3 {
+    position: relative;
+    top: 13.9em;
+  }
+
+  .CS_content .content4 {
+    position: relative;
+    top: 20.6em;
+  }
+
+  .CS_content .content5 {
+    position: relative;
+    top: 27.3em;
+  }
+
+  .CS_content .content6 {
+    position: relative;
+    top: 34em;
+  }
+
+  .CS_content .content7 {
+    position: relative;
+    top: 6.7em;
+  }
+
+  .CS_content .content8 {
+    position: relative;
+    top: 13.5em;
+  }
+
+  .CS_content .content8 img {
+    position: relative;
+    width: 100%;
+    height: 633px;
+    top: 3.2em;
+  }
+
+  .wire_frame {
+    position: relative;
+    padding: 0px 250px;
+    top: 56.2em;
+  }
+
+  .wire_frame .content9 .grid1 {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px 60px;
+    top: 41px;
+    padding-top: 30px;
+  }
+
+  .wire_frame .content9 .grid1 img {
+    position: relative;
+    width: 272px;
+    height: 588.97px;
+  }
+
+  .user_interface {
+    position: relative;
+    top: 63.25em;
+  }
+
+  .user_interface .content10 h3 {
+    position: relative;
+    padding: 0px 250px;
+  }
+
+  .ui_background {
+    position: relative;
+    padding: 0px 250px;
+    height: 163.125rem;
+    top: 15.25em !important;
+  }
+
+  .user_interface .content10 .ui_background .grid2 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px 60px;
+  }
+
+  .user_interface .content10 .ui_background .grid2 img {
+    position: relative;
+    width: 272px;
+    height: 550px;
+    top: -4rem;
+  }
+
+  .CSbottom_content {
+    position: relative;
+    padding: 0px 250px;
+    top: 93.4em;
+  }
+
+  .content11 p {
+    position: relative;
+    top: 2.85em !important;
+  }
+
+  .content12 {
+    position: relative;
+    top: 6.7em;
+  }
+
+  .content12 p {
+    position: relative;
+    top: 2.8em !important;
+  }
+
+  .color_palette {
+    position: relative;
+    top: 3.1em;
+  }
+
+  .content14 {
+    position: relative;
+    left: 30px;
+  }
+
+  .square {
+    position: relative;
+    width: 86.08px;
+    height: 74.39px;
+    margin-right: 30px;
+  }
+
+  .content15 {
+    position: relative;
+    top: 14em;
+  }
+
+  .content15 span {
+    position: relative;
+    top: 0.2rem;
+  }
+
+  .content15 p {
+    position: relative;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.6px;
+    top: 2.1rem;
+  }
+
+  .grid3 {
+    position: relative;
+    grid-template-columns: repeat(3, 0.2fr);
+  }
+
+  .content16 {
+    position: relative;
+    top: 20.8em;
+  }
+
+  .content16 p {
+    position: relative;
+    top: 2.85em !important;
+  }
+
+  .next_page a span {
+    font-size: 28px;
+    line-height: 54px;
+  }
+
+  .next_position {
+    position: relative;
+    height: 9.7em;
+    top: 28.85em;
+  }
+
+  .next .next_page .active_next::after {
+    position: absolute;
+    height: 0.2em;
+  }
+
+  /* Contact Content */
+  .contact-content {
+    position: relative;
+    height: 30rem;
+  }
+
+  .contact-header {
+    position: relative;
+    top: 0.82em;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 52px;
+  }
+
+  /* The Close Button */
+  .close {
+    position: absolute;
+    color: white;
+    font-size: 50px;
+    font-weight: bold;
+    right: 8px;
+    top: -2.2rem;
+  }
+
+  .contact-body {
+    position: relative;
+    top: 7.5rem;
+  }
+
+  .contact-body img {
+    position: relative;
+    width: 5.25rem;
+    height: auto;
+  }
+
+  .contact-body a:nth-of-type(odd) {
+    position: relative;
+    top: 3rem;
+  }
+
+  .contact-footer {
+    position: relative;
+    height: auto;
+    top: 16.9rem;
+    width: 56.125rem;
+    font-size: 32px;
+    line-height: 40px;
+  }
+}
+
+@media screen and (min-width: 1716px) {
+  .header_wrapper .navbar-brand img {
+    position: relative;
+    left: -5.3em;
+  }
+  .header_wrapper .nav-item {
+    position: relative;
+    right: -8.7em;
+  }
+}

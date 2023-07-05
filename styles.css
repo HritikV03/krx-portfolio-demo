@@ -1,0 +1,4414 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Planet:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sen&display=swap");
+@font-face {
+  font-family: "Planet N";
+  src: url(Font/planetn.ttf);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  /* Background Color */
+  --primary-color: #ffff;
+  --secondary-color: #0a0a0a;
+
+  /* Text Font & Color */
+  --primary-font: "Poppins", sans-serif;
+  --secondary-font: "Planet", sans-serif;
+  --primary-text: #fcfcfc;
+  --secondary-text: #0a0a0a;
+}
+
+html,
+body {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: var(--primary-font);
+  background-color: var(--primary-color);
+}
+
+a {
+  text-decoration: none;
+}
+
+/* 1 Custom CSS */
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--primary-color);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--secondary-color);
+}
+
+/* Navbar Start */
+
+.header_wrapper .navbar {
+  -webkit-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+.header_wrapper .navbar-brand img {
+  position: relative;
+  left: 0.2em;
+  width: 70%;
+  height: auto;
+  color: #0a0a0a;
+}
+
+.header_wrapper .navbar-toggler {
+  position: relative;
+  right: -0.4em;
+  border: none;
+}
+
+.header_wrapper .navbar-toggler:focus {
+  box-shadow: none;
+}
+
+.header_wrapper .nav-item {
+  text-align: center;
+  margin-top: 0.5em;
+}
+
+.header_wrapper .nav-item .nav-link {
+  position: relative;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--secondary-color);
+  display: inline-block;
+}
+
+.header_wrapper .nav-item .nav-link::after {
+  position: absolute;
+  content: "";
+  left: 0;
+  width: 0;
+  height: 0.2em;
+  background: var(--secondary-color);
+  transition: 0.3s;
+  bottom: 0;
+}
+
+.header_wrapper .nav-item .nav-link.active::after,
+.header_wrapper .nav-item .nav-link:hover::after {
+  width: 100%;
+}
+
+.header_wrapper .nav-item .nav-link.active,
+.header_wrapper .nav-item .nav-link:hover {
+  color: var(--secondary-color);
+}
+
+/* Navbar End */
+
+/* Banner Start */
+
+.banner_wrapper {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+
+}
+
+.banner_wrapper .container {
+  position: relative;
+  display: grid;
+  width: 100%;
+  height: auto;
+  background-color: #ffff;
+  padding: 0;
+}
+
+.content {
+  position: relative;
+  width: 100%;
+  height: auto;
+  top: 6.5em;
+  z-index: 1;
+}
+
+.content h1 {
+  /* Kartik Mahawar */
+
+  position: relative;
+  font-family: var(--primary-font);
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 40px;
+  text-align: center;
+  letter-spacing: 0.2em;
+  color: #0a0a0a;
+  padding: 0 30px;
+  margin: 0;
+}
+
+.content p {
+  /* “A designer who lives by ethics.” */
+
+  position: relative;
+  top: 2em;
+  font-family: "Planet N", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
+  text-align: center;
+  letter-spacing: 0.15em;
+  color: #0a0a0a;
+  padding: 0 2px;
+  margin: 0;
+}
+
+.center {
+  position: relative;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  height: auto;
+  margin: 0;
+}
+
+
+.heroimg {
+  position: relative;
+  top: 13.3em;
+}
+
+/* Banner End */
+
+/* --ABOUT_ME START--*/
+
+.about_me {
+  position: relative;
+  min-width: 100%;
+  min-height: 500px;
+  background-image: url("../images/about_me_bg.webp");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: initial;
+  top: 43.2em;
+}
+
+.about_me .container {
+  position: relative;
+  text-align: center;
+  width: 100%;
+  height: auto;
+  top: 5em;
+}
+
+.about_me .content1 {
+  position: relative;
+  top: 1.5rem;
+}
+
+.about-me-content {
+  position: relative;
+  top: 0.1em;
+}
+
+.about_me .content1 h1 {
+  font-family: var(--primary-font);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 16px;
+  letter-spacing: 0.1em;
+  color: #fcfcfc;
+}
+
+.about-me-content h6 {
+  /* “My design communicates” */
+
+  position: relative;
+  top: 5.5em;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 8px;
+  line-height: 24px;
+  letter-spacing: 0.15em;
+  color: #fcfcfc;
+}
+
+.about-me-content img {
+  position: relative;
+  width: 50px;
+  height: 1.5px;
+  top: 1.2em;
+  justify-content: center;
+}
+
+.about-me-content h3 {
+  position: relative;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.2em;
+  color: #fcfcfc;
+  top: 2.2em;
+}
+
+.about-me-content h4 {
+  position: relative;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.05em;
+  color: #fcfcfc;
+  top: 2.7em;
+}
+
+.about-me-content p {
+  position: relative;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 21px;
+  letter-spacing: 0.1em;
+  color: #fcfcfc;
+  top: 4.6em;
+}
+
+/* --ABOUT_ME END-- */
+
+/* --SKIILLSETS START-- */
+
+.skillset {
+  position: relative;
+  top: 43.2em;
+}
+
+.skillset .container .content2 span {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  font-family: var(--primary-font);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.1em;
+}
+
+.skillset .container .content2 {
+  position: relative;
+  top: 1.8em;
+}
+
+.grid {
+  position: relative;
+  display: grid;
+  top: 3.7em;
+  background: none;
+  grid-template-columns: auto auto;
+  gap: 30px 16px;
+  place-items: center;
+}
+
+/* Visual design */ /* Content writing */ /* Iconography */ /* User Research */
+.rectangle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-width: 8.75rem;
+  min-height: 5rem;
+  background: #f6f6f6;
+  box-shadow: 0px 16px 8px rgba(115, 107, 107, 0.08);
+  border-radius: 16px;
+}
+.rectangle img {
+  position: inherit;
+  min-width: 0.5em;
+  min-height: 0.5em;
+}
+
+.rectangle h4 {
+  position: relative;
+  top: 10px;
+  font-family: var(--primary-font);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  color: #0a0a0a;
+}
+
+/* --SKILLSETS END-- */
+
+/* --BOOKTRON START-- */
+
+.booktron {
+  content: "";
+  position: relative;
+  display: grid;
+  max-width: 100%;
+  min-height: 650px;
+  top: 48.8em;
+  background-image: url(../images/Rectangle\ bg.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: initial;
+}
+
+.booktron .container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 50px 274px;
+  justify-items: center;
+  align-items: center;
+}
+
+.booktron .btmockup {
+  position: relative;
+  min-width: auto;
+  max-height: 16.3rem;
+  top: -2em;
+  -webkit-box-reflect: below 0px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(0.8, transparent), to(rgba(0, 0, 0, 0.4)));
+  grid-row: 2;
+}
+
+.booktron .booktron_content {
+  position: relative;
+  width: auto;
+  height: 251px;
+  top: 1.7rem;
+  grid-row: 1;
+}
+
+.booktron_tit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.booktron_tit img {
+  width: 2.75rem;
+  height: 2.75rem;
+}
+
+.booktron_tit h1 {
+  position: relative;
+  left: 0.375rem;
+  padding-top: 0.2rem;
+  min-width: 9.375rem;
+  height: auto;
+  font-family: var(--primary-font);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+  letter-spacing: 0.1em;
+  color: #fdfbfb;
+}
+
+.booktron_content p {
+  position: relative;
+  width: 12rem;
+  height: 8.43rem;
+  top: 1em;
+  font-family: var(--primary-font);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  letter-spacing: 0.05em;
+  color: #ffffff;
+}
+
+.booktron_content button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 10.75rem;
+  height: 2rem;
+  left: 0px;
+  top: 1.3em;
+  background: #3d73dd;
+  border-radius: 0.5rem;
+  border: none;
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  transition-duration: 0.3s;
+  transition-property: transform;
+}
+
+.booktron_content button span {
+  width: auto;
+  height: 18px;
+  font-family: var(--primary-font);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: 0.05em;
+  color: #0a0a0a;
+}
+
+.booktron_content button:hover {
+  background: #fcfcfc;
+  transform: scale(1.1);
+}
+
+.booktron_content button span:hover {
+  color: #0a0a0a;
+}
+
+/* --BOOKTRON END-- */
+
+/* --BUTLER START-- */
+
+.butler {
+  position: relative;
+  display: grid;
+  max-width: 100%;
+  min-height: 650px;
+  top: 53em;
+}
+
+.butler .container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 50px 274px;
+  justify-items: center;
+  align-items: center;
+}
+
+.butler .butler_content {
+  position: relative;
+  width: auto;
+  height: 251px;
+  top: -2.6em;
+}
+
+.butler_tit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.butler_tit img {
+  width: 2.75rem;
+  height: 2.75rem;
+}
+
+.butler_tit h1 {
+  position: relative;
+  left: 0.375rem;
+  padding-top: 0.2rem;
+  min-width: 9.375rem;
+  height: auto;
+  font-family: var(--primary-font);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+  letter-spacing: 0.1em;
+  color: #0a0a0a;
+}
+
+.butler_content p {
+  position: relative;
+  width: 12rem;
+  height: 8.43rem;
+  top: 1em;
+  font-family: var(--primary-font);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  letter-spacing: 0.05em;
+  color: #0a0a0a;
+}
+
+.butler_content button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 10.75rem;
+  height: 2rem;
+  left: 0px;
+  top: 1.3em;
+  background: #3e47a3;
+  border-radius: 0.5rem;
+  border: none;
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  transition-duration: 0.3s;
+  transition-property: transform;
+}
+
+.butler_content button span {
+  width: auto;
+  height: 18px;
+  font-family: var(--primary-font);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: 0.05em;
+  color: #fcfcfc;
+}
+
+.butler_content button:hover {
+  background: #0a0a0a;
+  transform: scale(1.1);
+}
+
+.butler_content button span:hover {
+  color: #fcfcfc;
+}
+
+.butler_mockup {
+  position: relative;
+  max-width: 17.1rem;
+  height: 16rem;
+  top: -5em;
+  -webkit-box-reflect: below 0px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(0.7, transparent), to(rgba(0, 0, 0, 0.5)));
+}
+
+/* --BUTLER END--*/
+
+/* --GAME_CENTER START--*/
+
+.game_center {
+  content: "";
+  position: relative;
+  display: grid;
+  max-width: 100%;
+  min-height: 650px;
+  top: 50em;
+  background-image: url(../images/Rectangle\ bg.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: initial;
+}
+
+.game_center .container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 50px 274px;
+  justify-items: center;
+  align-items: center;
+}
+
+.game_center .gc_mockup {
+  position: relative;
+  max-width: 17.1rem;
+  min-height: 9.44rem;
+  top: -4.8em;
+  -webkit-box-reflect: below 0px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(0.7, transparent), to(rgba(0, 0, 0, 0.2)));
+  grid-row: 2;
+}
+
+.game_center .gamecenter_content {
+  position: relative;
+  width: auto;
+  height: 251px;
+  left: 1.2em;
+  top: 0.3em;
+  grid-row: 1;
+}
+
+.game_center_tit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.game_center_tit img {
+  width: 2.75rem;
+  height: 2.75rem;
+}
+
+.game_center_tit h1 {
+  position: relative;
+  left: 0.375rem;
+  padding-top: 0.2rem;
+  min-width: 9.375rem;
+  height: auto;
+  font-family: var(--primary-font);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 21px;
+  letter-spacing: 0.1em;
+  color: #fdfbfb;
+}
+
+.gamecenter_content p {
+  position: relative;
+  width: 12rem;
+  height: 8.43rem;
+  top: 1em;
+  font-family: var(--primary-font);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  letter-spacing: 0.05em;
+  color: #ffffff;
+}
+
+.gamecenter_content button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 10.75rem;
+  height: 2rem;
+  left: 0px;
+  top: 1.3em;
+  background: #89d6d6;
+  border-radius: 0.5rem;
+  border: none;
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  transition-duration: 0.3s;
+  transition-property: transform;
+}
+
+.gamecenter_content button span {
+  width: auto;
+  height: 18px;
+  font-family: var(--primary-font);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: 0.05em;
+  color: #0a0a0a;
+}
+
+.gamecenter_content button:hover {
+  background: #fcfcfc;
+  transform: scale(1.1);
+}
+
+.gamecenter_content button span:hover {
+  color: #0a0a0a;
+}
+
+/* --GAME_CENTER END-- */
+
+/* --OTHER WORKS Section START-- */
+
+.other_works {
+  position: relative;
+  top: 51.1em;
+}
+
+.other_works h1 {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  width: auto;
+  height: 1.5rem;
+  top: 2em;
+  font-family: var(--primary-font);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.1em;
+  color: #0a0a0a;
+}
+
+#grid1 {
+  position: relative;
+  display: grid;
+  min-width: 100%;
+  max-height: 82.25rem;
+  top: 10.9em;
+  background-image: url(../images/Rectangle\ bg.svg);
+  background-repeat: repeat;
+  background-position: center;
+  background-size: cover;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 50px 25rem;
+  place-items: center;
+  justify-items: center;
+}
+
+.images {
+  width: 15.6rem;
+  height: 21.37rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 9px 9px 0px 0px;
+}
+
+#otherwork1 {
+  position: relative;
+  top: -7.5em;
+  z-index: 1;
+}
+
+#otherwork2 {
+  position: relative;
+  top: -6.5rem;
+  z-index: 1;
+}
+
+#otherwork3 {
+  position: relative;
+  top: -5.5rem;
+  z-index: 1;
+}
+
+#otherwork4 {
+  position: relative;
+  top: -4.5rem;
+  z-index: 1;
+}
+
+.otherworks_btn1 {
+  position: absolute;
+  width: 15.6rem;
+  height: 2.09rem;
+  border: none;
+  border-top: rgba(115, 107, 107, 0.1) solid 1px;
+  background: #fcfcfc;
+  border-radius: 0px 0px 2px 2px;
+  cursor: pointer;
+}
+
+.otherworks_btn2 {
+  position: absolute;
+  width: 15.6rem;
+  height: 2.09rem;
+  border: none;
+  border-top: rgba(115, 107, 107, 0.1) solid 1px;
+  background: #1e1e1e;
+  border-radius: 0px 0px 2px 2px;
+  cursor: pointer;
+}
+
+#othwrk3_button {
+  background: #fcfcfc;
+}
+
+#othwrk3_button span {
+  color: #0a0a0a;
+}
+
+.otherworks_btn1 span {
+  font-family: var(--primary-font);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 8px;
+  line-height: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.1em;
+  color: #0a0a0a;
+}
+
+.otherworks_btn2 span {
+  font-family: var(--primary-font);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 8px;
+  line-height: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.1em;
+  color: #fcfcfc;
+}
+
+.other_works .vertical_heading {
+  display: none;
+}
+
+/* --OTHER WORKS Section END-- */
+
+/* --LOGO WORKS Section START-- */
+
+.logo_works {
+  position: relative;
+  top: 81.3em;
+}
+
+#grid2 {
+  position: relative;
+  display: grid;
+  width: 100%;
+  height: 85.71rem;
+  background-image: url(../images/Rectangle\ bg.svg);
+  background-repeat: repeat;
+  background-size: cover;
+  background-position: center;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 50px 25rem;
+  place-items: center;
+  justify-items: center;
+}
+
+.logo_images {
+  width: 15.6rem;
+  height: 21.37rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 9px 9px 0px 0px;
+}
+
+#logo_otherwork1 {
+  position: relative;
+  top: -6rem;
+  z-index: 1;
+}
+#logo_otherwork2 {
+  position: relative;
+  top: -5.2rem;
+  z-index: 1;
+}
+#logo_otherwork3 {
+  position: relative;
+  top: -4.4rem;
+  z-index: 1;
+}
+#logo_otherwork4 {
+  position: relative;
+  top: -3.4rem;
+  z-index: 1;
+}
+
+.logo_otherworks_btn1 {
+  position: absolute;
+  width: 15.6rem;
+  height: 2.09rem;
+  border: none;
+  background: #fcfcfc;
+  border-radius: 0px 0px 2px 2px;
+}
+.logo_otherworks_btn2 {
+  position: absolute;
+  width: 15.6rem;
+  height: 2.09rem;
+  border: none;
+  background: #1e1e1e;
+  border-radius: 0px 0px 2px 2px;
+}
+
+.logo_otherworks_btn1 span {
+  font-family: var(--primary-font);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 8px;
+  line-height: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.1em;
+  color: #0a0a0a;
+}
+
+.logo_otherworks_btn2 span {
+  font-family: var(--primary-font);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 8px;
+  line-height: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.1em;
+  color: #fcfcfc;
+}
+
+#logo_othwrk3_button {
+  background: #fcfcfc;
+}
+
+#logo_othwrk3_button span {
+  color: #0a0a0a;
+}
+
+.logo_works .vertical_logo_heading {
+  display: none;
+}
+
+/* --LOGO WORKS Section END-- */
+
+/* --Hover Animation on Other Works & Logo Works-- */
+
+.hvr-grow {
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  transition-duration: 0.3s;
+  transition-property: transform;
+}
+
+.hvr-grow:hover,
+.hvr-grow:focus,
+.hvr-grow:active {
+  transform: scale(1.1);
+}
+
+/* --FOOTER SECTION START-- */
+
+footer {
+  position: relative;
+  width: 100%;
+  height: 570px;
+  top: 92.2em;
+  background-image: url(../images/CONTACT\ ME\ bg.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: initial;
+}
+
+footer .container .footer_content {
+  position: relative;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer_content .footer_top_heading {
+  position: relative;
+  width: 100%;
+  height: auto;
+  top: 3.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.1em;
+  color: #fcfcfc;
+}
+
+.footer_content .socials_platforms {
+  position: relative;
+  min-width: 100%;
+  height: auto;
+  top: 6.4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer_content .socials_platforms img {
+  max-width: 3.25rem;
+}
+
+.footer_content .footer_bottom_heading {
+  position: relative;
+  width: 100%;
+  height: auto;
+  top: 11.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Planet N", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 18px;
+  letter-spacing: 0.06em;
+  color: #fcfcfc;
+}
+
+.devName {
+  position: relative;
+  top: 27em;
+}
+
+.devName span {
+  font-family: var(--primary-font);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 24px;
+  letter-spacing: 0.06em;
+  color: #fcfcfc;
+}
+
+/* Skip Results Iframe
+EDIT ON
+/* SIBLI.socials_platforms out siblings around a hovered item */
+
+.socials_platforms {
+  visibility: hidden;
+}
+/* Prevents :hover from triggering in the gaps between items */
+
+.socials_platforms > * {
+  visibility: visible;
+}
+/* Brings the child items back in, even though the parent is `hidden` */
+
+.socials_platforms > * {
+  transition: opacity 150ms linear 100ms, transform 150ms ease-in-out 100ms;
+}
+/* Makes the fades smooth with a slight delay to prevent jumps as the mouse moves between items */
+
+.socials_platforms:hover > * {
+  opacity: 0.4;
+  transform: scale(0.9);
+}
+/* Fade out all items when the parent is hovered */
+
+.socials_platforms > *:hover {
+  opacity: 1;
+  transform: scale(1.3);
+  transition-delay: 0ms, 0ms;
+}
+/* Fade in the currently hovered item */
+
+.socials_platforms a:nth-of-type(odd) {
+  position: relative;
+  top: 1.6rem;
+}
+
+#hvr-grow-contact-me {
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  transition-duration: 0.3s;
+  transition-property: transform;
+}
+
+#hvr-grow-contact-me:hover,
+#hvr-grow-contact-me:focus,
+#hvr-grow-contact-me:active {
+  transform: scale(1);
+}
+
+/* --FOOTER SECTION END-- */
+
+/* --TOP BUTTON START-- */
+
+#myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 10px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  background: transparent;
+}
+
+#myBtn:hover,
+#myBtn:focus {
+  background: transparent;
+  transition: all 0.5s;
+  transform: scale(1.5);
+}
+
+/* --TOP BUTTON END-- */
+
+@media screen and (min-width: 360px) {
+
+  .heroimg {
+    position: relative;
+    top: 10.5em;
+  }
+
+
+  .footer_content .footer_bottom_heading {
+    position: relative;
+    width: 100%;
+    height: auto;
+    top: 11.5rem;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 0.72px;
+    color: #fcfcfc;
+  }
+
+  .devName span {
+    font-family: var(--primary-font);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 24px;
+    letter-spacing: 1.2px;
+    color: #fcfcfc;
+  }
+}
+
+@media screen and (min-width: 375px) {
+  .content h1 {
+    /* Kartik Mahawar */
+
+    padding: 0 50px;
+  }
+
+  .content p {
+    /* “A designer who lives by ethics.” */
+
+    padding: 0 30px;
+  }
+
+  .heroimg {
+    position: relative;
+    top: 9.5em;
+  }
+
+}
+
+@media screen and (min-width: 425px) {
+  /* Navbar Start */
+
+  .header_wrapper .navbar-brand img {
+    position: relative;
+    left: 0.4em;
+  }
+
+  .header_wrapper .navbar-toggler {
+    position: relative;
+    right: -0.2em;
+  }
+
+  /* Navbar End */
+
+  /* Banner Start */
+
+  .content h1 {
+    /* Kartik Mahawar */
+
+    font-family: var(--primary-font);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 40px;
+    text-align: center;
+    letter-spacing: 0.2em;
+    color: #0a0a0a;
+    padding: 0 90px;
+  }
+
+  .content p {
+    /* “A designer who lives by ethics.” */
+
+    padding: 0 65px;
+  }
+
+  .content {
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  .center {
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: auto;
+    margin: 0;
+  }
+
+  .heroimg {
+    position: relative;
+    top: 8.8em;
+    transform: scale(.8);
+  }
+
+  /* Banner End */
+
+  /* --ABOUT_ME START--*/
+
+  .about_me {
+    position: relative;
+    min-width: 100%;
+    min-height: 600px;
+    background-image: url("../images/about_me3.webp");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: initial;
+  }
+
+  .about_me .container {
+    top: 11em;
+  }
+
+  .about_me .about-me-content {
+    position: relative;
+    top: 1.5rem;
+  }
+
+  /* --ABOUT_ME END-- */
+
+  /* --SKIILLSETS START-- */
+
+
+  .grid {
+    top: 3.7em;
+    gap: 30px 20px;
+  }
+
+  /* --SKILLSETS END-- */
+
+
+  /* --OTHER WORKS Section START-- */
+
+
+  #grid1 {
+    min-width: 100%;
+    max-height: 100.875rem;
+    top: 12.7em;
+  }
+
+  .images {
+    width: 18.75rem;
+    height: 25.653125rem;
+  }
+
+  .otherworks_btn1 {
+    width: 18.75rem;
+    height: 2.51875rem;
+  }
+
+  .otherworks_btn2 {
+    width: 18.75rem;
+    height: 2.51875rem;
+  }
+
+  #otherwork1 {
+    position: relative;
+    top: -9.3em;
+    z-index: 1;
+  }
+
+  #otherwork2 {
+    position: relative;
+    top: -8rem;
+    z-index: 1;
+  }
+
+  #otherwork3 {
+    position: relative;
+    top: -6.7rem;
+    z-index: 1;
+  }
+
+  #otherwork4 {
+    position: relative;
+    top: -5.4rem;
+    z-index: 1;
+  }
+
+  /* --OTHER WORKS Section END-- */
+
+  /* --LOGO WORKS Section START-- */
+
+
+  #grid2 {
+    width: 100%;
+    height: 101.3125rem;
+  }
+
+  .logo_images {
+    width: 18.75rem;
+    height: 25.653125rem;
+  }
+
+  .logo_otherworks_btn1 {
+    width: 18.75rem;
+    height: 2.51875rem;
+  }
+
+  .logo_otherworks_btn2 {
+    width: 18.75rem;
+    height: 2.51875rem;
+  }
+
+  #logo_otherwork1 {
+    position: relative;
+    top: -7.9rem;
+    z-index: 1;
+  }
+  #logo_otherwork2 {
+    position: relative;
+    top: -6.6rem;
+    z-index: 1;
+  }
+  #logo_otherwork3 {
+    position: relative;
+    top: -5.3rem;
+    z-index: 1;
+  }
+  #logo_otherwork4 {
+    position: relative;
+    top: -4rem;
+    z-index: 1;
+  }
+
+  /* --LOGO WORKS Section END-- */
+
+}
+
+@media screen and (min-width: 500px) {
+  .content h1 {
+    /* Kartik Mahawar */
+
+    padding: 0 150px;
+  }
+
+  .content p {
+    /* “A designer who lives by ethics.” */
+
+    padding: 0 120px;
+  }
+
+
+  .heroimg {
+    position: relative;
+    top: 5.8em;
+    transform: scale(.7);
+  }
+}
+
+@media screen and (min-width: 575px) {
+
+  .center {
+    position: relative;
+    width: 100%;
+    height: auto;
+  }
+
+  .heroimg {
+    position: relative;
+    top: 3.2em;
+  }
+
+}
+
+@media screen and (min-width: 768px) {
+  /* Banner Start */
+
+  .banner_wrapper {
+    position: relative;
+    width: 100%;
+    height: auto;
+    top: -5.6em;
+  }
+
+  .content {
+    position: relative;
+    width: 100%;
+    height: auto;
+    top: 21em;
+    left: -10em;
+  }
+
+  .content h1 {
+    /* Kartik Mahawar */
+
+    position: relative;
+    width: 550px;
+    height: 90px;
+    font-family: var(--primary-font);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 40px;
+    text-align: center;
+    letter-spacing: 0.2em;
+    color: #0a0a0a;
+    margin: 0 auto;
+  }
+
+  .content p {
+    /* “A designer who lives by ethics.” */
+
+    position: relative;
+    width: 600px;
+    height: auto;
+    top: 1em;
+    left: .5em;
+    font-family: "Planet N";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.15em;
+    color: #0a0a0a;
+    margin: 0 auto;
+  }
+
+  .center {
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    float: right;
+  }
+
+  .heroimg {
+    position: relative;
+    top: 3.7em;
+    transform: scale(1);
+  }
+
+  /* Banner End */
+
+  /* --ABOUT_ME START--*/
+
+  .about_me {
+    position: relative;
+    min-width: 100%;
+    min-height: 530px;
+    background-image: url("../images/about_me4.webp");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: initial;
+    top: -2em;
+  }
+
+  .about_me .container {
+    position: relative;
+    text-align: center;
+    width: 100%;
+    height: auto;
+    top: 1.8em;
+  }
+
+  .about_me .about-me-content {
+    position: relative;
+    text-align: center;
+    top: -4rem;
+  }
+
+  .about_me .content1 h1 {
+    position: relative;
+    top: -0.3em;
+    font-family: var(--primary-font);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 48px;
+    letter-spacing: 0.1em;
+    color: #fcfcfc;
+  }
+
+  .about-me-content h6 {
+    /* “My design communicates” */
+
+    position: relative;
+    top: 15em;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 24px;
+    letter-spacing: 0.15em;
+    color: #fcfcfc;
+  }
+
+  .about-me-content img {
+    position: relative;
+    top: 8.1em;
+  }
+
+  .about-me-content h3 {
+    position: relative;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.2em;
+    color: #fcfcfc;
+    top: 8.5em;
+  }
+
+  .about-me-content h4 {
+    position: relative;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 0.05em;
+    color: #fcfcfc;
+    top: 8.4em;
+  }
+
+  .about-me-content p {
+    position: relative;
+    width: 340px;
+    margin: auto;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: 0.1em;
+    color: #fcfcfc;
+    top: 12em;
+  }
+
+  /* --ABOUT_ME END-- */
+
+  /* --SKIILLSETS START-- */
+
+  .skillset {
+    top: -2em;
+  }
+
+  .skillset .container .content2 {
+    position: relative;
+    top: 3.1em;
+  }
+
+  .skillset .container .content2 span {
+    font-size: 20px;
+    line-height: 27px;
+  }
+
+  .grid {
+    position: relative;
+    display: grid;
+    margin: auto;
+    top: 5em;
+    background-image: url("../images/skillsetbg.webp");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 600px 400px;
+    grid-template-columns: auto auto;
+  }
+
+  /* Visual design */ /* Content writing */ /* Iconography */ /* User Research */
+
+  .rectangle {
+    min-width: 150px;
+    min-height: 80px;
+    background: #f6f6f6;
+    box-shadow: 0px 16px 8px rgba(115, 107, 107, 0.1);
+    border-radius: 16px;
+    padding: 15px 5px;
+  }
+
+  .rectangle img {
+    position: inherit;
+    width: 26px;
+    height: 26px;
+  }
+
+  .rectangle h4 {
+    position: relative;
+    font-family: var(--primary-font);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 27px;
+    color: #0a0a0a;
+  }
+
+  #visual {
+    position: relative;
+    left: -5.1em;
+  }
+
+  #ujmap {
+    position: relative;
+    left: 5.45em;
+  }
+
+  #userrech {
+    position: relative;
+    top: 0.3em;
+    left: 1.7em;
+  }
+
+  #userflow {
+    position: relative;
+    top: 0.3em;
+    left: -1.7em;
+  }
+
+  #wireframe {
+    position: relative;
+    top: 0.5em;
+    left: -5.1em;
+  }
+
+  #prototyping {
+    position: relative;
+    top: 0.5em;
+    left: 5.1em;
+  }
+
+  #utesting {
+    position: relative;
+    top: 0.3em;
+    left: 1.7em;
+  }
+
+  #hevaluation {
+    position: relative;
+    top: 0.3em;
+    left: -1.7em;
+  }
+
+  #idesign {
+    position: relative;
+    top: 0.1em;
+    left: -5.1em;
+  }
+
+  #infoarch {
+    position: relative;
+    top: 0.1em;
+    left: 5.2em;
+  }
+
+  /* --SKIILLSETS END-- */
+
+  /* --BOOKTRON START-- */
+
+  .booktron {
+    top: 6.25em;
+  }
+
+  /* --BOOKTRON END-- */
+
+  .butler {
+    top: 10.45em;
+  }
+
+  .game_center {
+    top: 9em;
+  }
+
+  /* --OTHER WORKS Section START-- */
+
+  .other_works {
+    top: 9.57em;
+  }
+
+  .other_works h1 {
+    font-size: 20px;
+    line-height: 27px;
+  }
+
+  /* --OTHER WORKS Section END-- */
+
+  /* --LOGO WORKS Section START-- */
+
+  .logo_works {
+    position: relative;
+    top: 43em;
+  }
+
+  /* --LOGO WORKS Section END-- */
+
+  footer {
+    position: relative;
+    width: 100%;
+    height: 25rem;
+    top: 58em;
+  }
+
+  .footer_content .footer_top_heading {
+    font-size: 20px;
+  }
+
+  .footer_content .socials_platforms img {
+    max-width: 3rem;
+    height: 3rem;
+  }
+
+  .footer_content .footer_bottom_heading {
+    font-size: 18px;
+    width: 30rem;
+    top: 11em;
+  }
+
+  .devName {
+    position: relative;
+    top: 17em;
+  }
+
+  .devName span {
+    font-size: 12px;
+    line-height: 20px;
+  }
+
+  .socials_platforms a:nth-of-type(odd) {
+    position: relative;
+    top: 1.9rem;
+  }
+}
+
+@media screen and (min-width: 905px) {
+  /* Navbar Start */
+
+  .header_wrapper {
+    position: relative;
+    top: 1.3em;
+  }
+
+  .header_wrapper .navbar-brand img {
+    width: 4.125rem;
+    height: 1.4375rem;
+    left: -2.5em;
+  }
+
+  .header_wrapper .navbar-toggler {
+    position: relative;
+    left: 3.2em;
+  }
+
+  .header_wrapper .nav-item {
+    text-align: center;
+    margin-top: 0;
+    margin: 0 25px 0 20px;
+  }
+
+  .header_wrapper .nav-item .nav-link {
+    font-size: 18px;
+    font-weight: 600;
+  }
+
+  /* Navbar End */
+
+  /* Banner Start */
+
+  .banner_wrapper {
+    position: relative;
+    min-width: 100%;
+    min-height: auto;
+    top: 3em;
+  }
+
+  .content h1 {
+    /* Kartik Mahawar */
+
+    position: relative;
+    font-family: var(--primary-font);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 38px;
+    line-height: 55px;
+    text-align: center;
+    letter-spacing: 0.2em;
+    color: #0a0a0a;
+  }
+
+  .content p {
+    /* “A designer who lives by ethics.” */
+
+    position: relative;
+    width: 700px;
+    height: auto;
+    top: 2em;
+    font-family: "Planet N";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 40px;
+    text-align: center;
+    letter-spacing: 0.15em;
+    color: #0a0a0a;
+  }
+
+  .content {
+    top: 12em;
+    left: -12em;
+  }
+
+  .heroimg {
+    position: relative;
+    top: -7.9em;
+  }
+
+  /* Banner End */
+
+  /* --ABOUT_ME START--*/
+
+  .about_me {
+    position: relative;
+    min-width: 100%;
+    min-height: 44.814375rem;
+    background-image: url("../images/about_me5.webp");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: initial;
+    top: -5em;
+  }
+
+  .about_me .about-me-content {
+    position: relative;
+    text-align: center;
+    top: 3em;
+  }
+
+  .about_me .content1 h1 {
+    position: relative;
+    top: 0.8em;
+    font-family: var(--primary-font);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 38px;
+    line-height: 36px;
+    letter-spacing: 0.1em;
+  }
+
+  .about-me-content h6 {
+    /* “My design communicates” */
+
+    position: relative;
+    top: 9em;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.15em;
+    color: #fcfcfc;
+  }
+
+  .about-me-content img {
+    width: 100px;
+    height: 3px;
+  }
+
+  .about-me-content h3 {
+    position: relative;
+    top: 7em;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 54px;
+    letter-spacing: 0.2em;
+    color: #fcfcfc;
+  }
+
+  .about-me-content h4 {
+    position: relative;
+
+    top: 4em;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 54px;
+    letter-spacing: 0.05em;
+    color: #fcfcfc;
+  }
+
+  .about-me-content p {
+    position: relative;
+    width: 520px;
+    margin: auto;
+    top: 12em;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.1em;
+    color: #fcfcfc;
+  }
+
+  /* --ABOUT_ME END-- */
+
+  /* --SKIILLSETS START-- */
+
+  .skillset {
+    top: -5em;
+  }
+
+  .skillset .container .content2 span {
+    font-size: 38px;
+    line-height: 36px;
+  }
+
+  .skillset .container .content2 {
+    top: 4.5em;
+  }
+
+  .grid {
+    position: relative;
+    display: grid;
+    margin: auto;
+    top: 11em;
+    background-image: url("../images/skillsetbg.webp");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 750px 510px;
+    grid-template-columns: auto auto;
+  }
+
+  /* Visual design */ /* Content writing */ /* Iconography */ /* User Research */
+
+  .rectangle {
+    min-width: 180px;
+    min-height: 90px;
+    background: #f6f6f6;
+    box-shadow: 0px 16px 8px rgba(115, 107, 107, 0.1);
+    border-radius: 16px;
+    padding: 15px 5px;
+  }
+
+  .rectangle img {
+    position: inherit;
+    width: 26px;
+    height: 26px;
+  }
+
+  .rectangle h4 {
+    position: relative;
+    font-family: var(--primary-font);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 27px;
+    color: #0a0a0a;
+  }
+
+  #visual {
+    position: relative;
+    top: -2.7em;
+    left: -8.5em;
+  }
+
+  #ujmap {
+    position: relative;
+    top: -2.7em;
+    left: 8.5em;
+  }
+
+  #userrech {
+    position: relative;
+    top: -1.1em;
+    left: 1.1em;
+  }
+
+  #userflow {
+    position: relative;
+    top: -1.1em;
+    left: -1.1em;
+  }
+
+  #wireframe {
+    position: relative;
+    top: 0.5em;
+    left: -8.5em;
+  }
+
+  #prototyping {
+    position: relative;
+    top: 0.5em;
+    left: 8.5em;
+  }
+
+  #utesting {
+    position: relative;
+    top: 0.8em;
+    left: 1.1em;
+  }
+
+  #hevaluation {
+    position: relative;
+    top: 0.8em;
+    left: -1.1em;
+  }
+
+  #idesign {
+    position: relative;
+    top: 1.1em;
+    left: -8.5em;
+  }
+
+  #infoarch {
+    position: relative;
+    top: 1.1em;
+    left: 8.5em;
+  }
+
+  /* --SKIILLSETS END-- */
+
+  /* --BOOKTRON START-- */
+
+  .booktron {
+    content: "";
+    position: relative;
+    display: grid;
+    max-width: 100%;
+    min-height: 821px;
+    top: 11.5em;
+    background-image: url(../images/Rectangle\ bg.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: initial;
+  }
+
+  .booktron .btmockup {
+    position: relative;
+    width: auto;
+    max-height: 25.046875rem;
+    top: -4.6em;
+    left: -0.8em;
+    -webkit-box-reflect: below 0px -webkit-gradient(linear, left top, left
+          bottom, from(transparent), color-stop(0.7, transparent), to(rgba(0, 0, 0, 0.2)));
+    grid-column: 1;
+  }
+
+  .booktron .booktron_content {
+    position: relative;
+    width: auto;
+    height: 31.5625rem;
+    top: -2.6em;
+    left: -6em;
+    grid-column: 2;
+  }
+
+  .booktron_tit {
+    position: relative;
+    width: 350px;
+    height: 68px;
+    left: -0.2em;
+  }
+
+  .booktron_tit img {
+    width: 3.8rem;
+    height: 3.8rem;
+  }
+
+  .booktron_tit h1 {
+    position: relative;
+    left: 0.375rem;
+    padding-top: 0.2rem;
+    min-width: 17.5625rem;
+    height: auto;
+    font-family: var(--primary-font);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 38px;
+    line-height: 68px;
+    letter-spacing: 0.1em;
+    color: #fdfbfb;
+  }
+
+  .booktron_content p {
+    position: relative;
+    width: 22rem;
+    height: 20rem;
+    top: 0.9em;
+    font-family: var(--primary-font);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 62px;
+    letter-spacing: 0.05em;
+    color: #ffffff;
+  }
+
+  .booktron_content button {
+    width: 13.75rem;
+    height: 3.244375rem;
+    border-radius: 0.75rem;
+    top: 2.5em;
+  }
+
+  .booktron_content button span {
+    width: auto;
+    height: 72px;
+    font-size: 16px;
+    line-height: 72px;
+  }
+
+  /* --BOOKTRON END-- */
+
+  /* --BUTLER START-- */
+
+  .butler {
+    position: relative;
+    display: grid;
+    max-width: 100%;
+    height: 750px;
+    top: 10em;
+  }
+
+  .butler .butler_content {
+    position: relative;
+    width: auto;
+    height: 505px;
+    left: -14em;
+    top: 6.8em;
+  }
+
+  .butler_tit {
+    position: relative;
+    width: 264px;
+    height: 95.84px;
+    left: -0.7em;
+    top: -0.3em;
+  }
+
+  .butler_tit img {
+    width: 3.8rem;
+    height: 3.8rem;
+  }
+
+  .butler_tit h1 {
+    position: relative;
+    left: 0.375rem;
+    padding-top: 0.2rem;
+    min-width: 11.25rem;
+    height: auto;
+    font-family: var(--primary-font);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 68px;
+    letter-spacing: 0.1em;
+    color: #0a0a0a;
+  }
+
+  .butler_content p {
+    position: relative;
+    width: 22rem;
+    height: 19rem;
+    top: 0.2em;
+    font-family: var(--primary-font);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 62px;
+    letter-spacing: 0.05em;
+    color: #0a0a0a;
+  }
+
+  .butler_content button {
+    width: 13.75rem;
+    height: 3.244375rem;
+    border-radius: 0.75rem;
+    top: 1.3em;
+  }
+
+  .butler_content button span {
+    width: auto;
+    height: 72px;
+    font-size: 16px;
+    line-height: 72px;
+  }
+
+  .butler_mockup {
+    position: relative;
+    max-width: 20.714375rem;
+    height: 25rem;
+    top: -25em;
+    left: 15.5em;
+    -webkit-box-reflect: below 0px -webkit-gradient(linear, left top, left
+          bottom, from(transparent), color-stop(0.7, transparent), to(rgba(0, 0, 0, 0.2)));
+  }
+
+  /* --BUTLER END--*/
+
+  /* --GAME_CENTER START--*/
+
+  .game_center {
+    content: "";
+    position: relative;
+    display: grid;
+    max-width: 100%;
+    min-height: 821px;
+    top: 8.6xem;
+    background-image: url(../images/Rectangle\ bg.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: initial;
+  }
+
+  .game_center .gc_mockup {
+    position: relative;
+    max-width: 21.875rem;
+    min-height: 13.220625rem;
+    top: -7.5em;
+    left: -0.1em;
+    grid-column: 1;
+  }
+
+  .game_center .gamecenter_content {
+    position: relative;
+    width: auto;
+    height: 476px;
+    left: -5.9em;
+    top: -0.8em;
+    grid-column: 2;
+  }
+
+  .game_center_tit {
+    left: -0.2em;
+  }
+
+  .game_center_tit img {
+    width: 3.8rem;
+    height: 3.8rem;
+  }
+
+  .game_center_tit h1 {
+    position: relative;
+    left: 0.375rem;
+    padding-top: 0.2rem;
+    min-width: 18rem;
+    height: auto;
+    font-family: var(--primary-font);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 68px;
+    letter-spacing: 0.1em;
+    color: #fdfbfb;
+  }
+
+  .gamecenter_content p {
+    position: relative;
+    width: 22rem;
+    height: 19rem;
+    top: 0.9em;
+    font-family: var(--primary-font);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 62px;
+    letter-spacing: 0.05em;
+    color: #ffffff;
+  }
+
+  .gamecenter_content button {
+    width: 13.75rem;
+    height: 3.244375rem;
+    border-radius: 0.75rem;
+    top: 2.9em;
+  }
+
+  .gamecenter_content button span {
+    width: auto;
+    height: 72px;
+    font-size: 16px;
+    line-height: 72px;
+  }
+
+  /* --GAME_CENTER END-- */
+
+  /* --OTHER WORKS Section START-- */
+
+  .other_works {
+    position: relative;
+    top: -13em;
+  }
+
+  .other_works h1 {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: auto;
+    height: 2.25rem;
+    top: 27rem;
+    font-family: var(--primary-font);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 38px;
+    line-height: 36px;
+    letter-spacing: 0.1em;
+    color: #0a0a0a;
+  }
+
+  #grid1 {
+    position: relative;
+    display: grid;
+    min-width: 100%;
+    max-height: 50rem;
+    top: 14.3em;
+    background-image: url(../images/Rectangle\ bg.svg);
+    background-repeat: repeat;
+    background-position: center;
+    background-size: cover;
+    grid-template-columns: auto auto;
+    gap: 50px 15rem;
+    place-items: center;
+    justify-items: center;
+  }
+
+  .images {
+    width: 21.875rem;
+    height: 28.45625rem;
+  }
+
+  #otherwork1 {
+    position: relative;
+    top: -10.2rem;
+    left: 3.3rem;
+    z-index: 1;
+  }
+
+  #otherwork2 {
+    position: relative;
+    top: -7.3rem;
+    left: -3.3rem;
+    z-index: 1;
+  }
+  #otherwork3 {
+    position: relative;
+    top: -4.2rem;
+    left: 3.3rem;
+    z-index: 1;
+  }
+  #otherwork4 {
+    position: relative;
+    top: -1.4rem;
+    left: -3.3rem;
+    z-index: 1;
+  }
+
+  .otherworks_btn1 {
+    width: 21.875rem;
+    height: 2.79375rem;
+  }
+
+  .otherworks_btn1 span {
+    font-size: 14px;
+    line-height: 36px;
+  }
+
+  .otherworks_btn2 {
+    width: 21.875rem;
+    height: 2.79375rem;
+    background: #1e1e1e !important;
+  }
+
+  .otherworks_btn2 span {
+    font-size: 14px;
+    line-height: 36px;
+    color: #fcfcfc !important;
+  }
+
+  .other_works .container1 .vertical_heading {
+    display: block;
+    position: relative;
+    width: auto;
+    height: auto;
+    top: 56rem;
+    z-index: 1;
+  }
+
+  .other_works .container1 .vertical_heading h4 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    place-items: center;
+    font-family: var(--primary-font);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    letter-spacing: 0.1em;
+    color: #fcfcfc;
+  }
+
+  /* --OTHER WORKS Section END-- */
+
+  /* --LOGO WORKS Section START-- */
+
+  .logo_works {
+    position: relative;
+    top: -10em;
+  }
+
+  #grid2 {
+    position: relative;
+    display: grid;
+    width: 100%;
+    height: 50rem;
+    top: 12.5em;
+    background-image: url(../images/Rectangle\ bg.svg);
+    background-repeat: repeat;
+    background-size: cover;
+    background-position: center;
+    grid-template-columns: auto auto;
+    gap: 50px 15rem;
+    place-items: center;
+    justify-items: center;
+  }
+
+  .logo_images {
+    width: 21.875rem;
+    height: 28.45625rem;
+  }
+
+  #logo_otherwork1 {
+    position: relative;
+    top: -9rem;
+    left: 3.3rem;
+    z-index: 1;
+  }
+  #logo_otherwork2 {
+    position: relative;
+    top: -6.2rem;
+    left: -3.3rem;
+    z-index: 1;
+  }
+  #logo_otherwork3 {
+    position: relative;
+    top: -3rem;
+    left: 3.3rem;
+    z-index: 1;
+  }
+  #logo_otherwork4 {
+    position: relative;
+    top: -0.1rem;
+    left: -3.3rem;
+    z-index: 1;
+  }
+
+  .logo_otherworks_btn1 {
+    width: 21.875rem;
+    height: 2.79375rem;
+  }
+
+  .logo_otherworks_btn2 {
+    position: relative;
+    width: 21.875rem;
+    height: 2.79375rem;
+    background: #1e1e1e !important;
+    top: -0.1em;
+  }
+
+  .logo_otherworks_btn1 span {
+    font-size: 14px;
+    line-height: 36px;
+  }
+
+  .logo_otherworks_btn2 span {
+    font-size: 14px;
+    line-height: 36px;
+    color: #fcfcfc !important;
+  }
+
+  .logo_works .container2 .vertical_logo_heading {
+    position: relative;
+    display: block;
+    width: auto;
+    height: auto;
+    top: 53.3rem;
+    z-index: 1;
+  }
+
+  .logo_works .container2 .vertical_logo_heading h4 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    place-items: center;
+    align-items: center;
+    font-family: var(--primary-font);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    color: #fcfcfc;
+  }
+
+  /* --LOGO WORKS Section END-- */
+
+  /* --FOOTER SECTION START-- */
+
+  footer {
+    position: relative;
+    width: 100%;
+    height: 49.3125rem;
+    top: 20em;
+    background-image: url(../images/CONTACT\ ME\ bg.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: initial;
+  }
+
+  .footer_content .footer_top_heading {
+    font-size: 38px;
+    line-height: 54px;
+    top: 2.7em;
+  }
+
+  .footer_content .socials_platforms img {
+    max-width: 5.25rem;
+    height: 5.831875rem;
+  }
+
+  .footer_content .socials_platforms {
+    top: 13.8rem;
+  }
+
+  .footer_content .footer_bottom_heading {
+    width: 49.125rem;
+    font-size: 28px;
+    line-height: 36px;
+    letter-spacing: 0.1em;
+    top: 25.6rem;
+  }
+
+  .devName {
+    position: relative;
+    top: 35rem;
+  }
+
+  .devName span {
+    font-size: 14px;
+    line-height: 28px;
+  }
+
+  .socials_platforms a:nth-of-type(odd) {
+    top: 3rem;
+  }
+
+  /* --FOOTER SECTION END-- */
+}
+
+@media screen and (min-width: 992px) {
+  .header_wrapper .navbar-brand img {
+    width: 4.125rem;
+    height: 1.4375rem;
+    left: 1.7em;
+  }
+
+  .content {
+    top: 15em;
+    left: -13em;
+  }
+
+  .about-me-content {
+    top: 0.5em;
+  }
+
+  /* --SKIILLSETS START-- */
+
+  .skillset .container .content2 h1 {
+    font-size: 22px;
+    line-height: 27px;
+    top: 0.1em;
+  }
+
+  .grid {
+    position: relative;
+    display: grid;
+    margin: auto;
+    top: 11em;
+    background-image: url("../images/skillsetbg.webp");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 750px 510px;
+    grid-template-columns: auto auto;
+  }
+
+  /* Visual design */ /* Content writing */ /* Iconography */ /* User Research */
+
+  .rectangle {
+    min-width: 180px;
+    min-height: 90px;
+    background: #f6f6f6;
+    box-shadow: 0px 16px 8px rgba(115, 107, 107, 0.1);
+    border-radius: 16px;
+    padding: 15px 5px;
+  }
+
+  .rectangle img {
+    position: inherit;
+    width: 26px;
+    height: 26px;
+  }
+
+  .rectangle h4 {
+    position: relative;
+    font-family: var(--primary-font);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 27px;
+    color: #0a0a0a;
+  }
+
+  #visual {
+    position: relative;
+    top: -2.7em;
+    left: -8.5em;
+  }
+
+  #ujmap {
+    position: relative;
+    top: -2.7em;
+    left: 8.5em;
+  }
+
+  #userrech {
+    position: relative;
+    top: -1.1em;
+    left: 1.1em;
+  }
+
+  #userflow {
+    position: relative;
+    top: -1.1em;
+    left: -1.1em;
+  }
+
+  #wireframe {
+    position: relative;
+    top: 0.5em;
+    left: -8.5em;
+  }
+
+  #prototyping {
+    position: relative;
+    top: 0.5em;
+    left: 8.5em;
+  }
+
+  #utesting {
+    position: relative;
+    top: 0.8em;
+    left: 1.1em;
+  }
+
+  #hevaluation {
+    position: relative;
+    top: 0.8em;
+    left: -1.1em;
+  }
+
+  #idesign {
+    position: relative;
+    top: 1.1em;
+    left: -8.5em;
+  }
+
+  #infoarch {
+    position: relative;
+    top: 1.1em;
+    left: 8.5em;
+  }
+
+  /* --SKIILLSETS END-- */
+
+  .booktron .btmockup {
+    position: relative;
+    width: auto;
+    max-height: 25.046875rem;
+    top: -4.6em;
+    left: 2em;
+  }
+
+  .butler .butler_content {
+    position: relative;
+    width: auto;
+    height: 505px;
+    left: 2.8em;
+    top: 0.2em;
+  }
+
+  .butler_mockup {
+    position: relative;
+    max-width: 20.714375rem;
+    height: 25rem;
+    top: -0.1em;
+    left: -6.5em;
+  }
+
+  .game_center .gc_mockup {
+    position: relative;
+    max-width: 21.875rem;
+    min-height: 13.220625rem;
+    top: -7.5em;
+    left: 2.7em;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  /* Navbar Start */
+
+  .header_wrapper {
+    position: relative;
+    top: 1.3em;
+  }
+
+  .header_wrapper .navbar-brand img {
+    width: 4.125rem;
+    height: 1.4375rem;
+    left: 1.55em;
+  }
+
+  .header_wrapper .nav-item {
+    text-align: center;
+    margin-top: 0;
+    margin: 0 25px 0 20px;
+  }
+
+  .header_wrapper .nav-item .nav-link {
+    font-size: 18px;
+    font-weight: 600;
+  }
+
+  /* Navbar End */
+
+  /* Banner Start */
+
+  .banner_wrapper {
+    position: relative;
+    min-width: 100%;
+    min-height: auto;
+  }
+
+  .content h1 {
+    /* Kartik Mahawar */
+
+    position: relative;
+    font-family: var(--primary-font);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 72px;
+    text-align: center;
+    letter-spacing: 7.6px;
+    color: #0a0a0a;
+  }
+
+  .content p {
+    /* “A designer who lives by ethics.” */
+
+    position: relative;
+    width: 650px;
+    height: auto;
+    top: 3em;
+    font-family: "Planet N";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 50px;
+    text-align: center;
+    letter-spacing: 2.7px;
+    color: #0a0a0a;
+  }
+
+  .content {
+    top: 15em;
+  }
+
+  /* Banner End */
+
+  /* --ABOUT_ME START--*/
+
+  .about_me {
+    position: relative;
+    min-width: 100%;
+    min-height: 52.4375rem;
+    background-image: url("../images/about_me6.webp");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 45rem;
+    background-attachment: initial;
+    top: -8.8em;
+  }
+
+  .about_me .content1 h1 {
+    top: 2.5em;
+    font-family: var(--primary-font);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 38px;
+    line-height: 36px;
+    letter-spacing: 0.1em;
+  }
+
+  .about-me-content h6 {
+    /* “My design communicates” */
+
+    position: relative;
+    top: 20.5em;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.15em;
+    color: #fcfcfc;
+  }
+
+  .about-me-content img {
+    width: 100px;
+    height: 3px;
+    top: 19.77em;
+  }
+
+  .about-me-content h3 {
+    position: relative;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 54px;
+    letter-spacing: 0.2em;
+    color: #fcfcfc;
+    top: 13.28em;
+  }
+
+  .about-me-content h4 {
+    position: relative;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 54px;
+    letter-spacing: 0.05em;
+    color: #fcfcfc;
+    top: 20.77em;
+  }
+
+  .about-me-content p {
+    position: relative;
+    width: 496px;
+    height: 96px;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.1em;
+    color: #fcfcfc;
+    top: 23.5em;
+  }
+
+  .about_me .about-me-content {
+    top: -6em;
+  }
+
+  /* --ABOUT_ME END-- */
+
+  /* --SKIILLSETS START-- */
+
+  .skillset {
+    position: relative;
+    top: -12.5em;
+  }
+
+  .skillset .container .content2 span {
+    position: relative;
+    font-size: 38px;
+    line-height: 36px;
+  }
+
+  .skillset .container .content2 {
+    top: 6.3em;
+  }
+
+  .grid {
+    position: relative;
+    display: grid;
+    margin: auto;
+    top: 12em;
+    background-image: url("../images/skillsetbg.webp");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 700px 500px;
+    grid-template-columns: auto auto;
+  }
+
+  /* Visual design */ /* Content writing */ /* Iconography */ /* User Research */
+
+  .rectangle {
+    min-width: 200px;
+    min-height: 100px;
+    background: #f6f6f6;
+    box-shadow: 0px 16px 8px rgba(115, 107, 107, 0.1);
+    border-radius: 16px;
+  }
+
+  .rectangle img {
+    position: inherit;
+    width: 26px;
+    height: 26px;
+  }
+
+  .rectangle h4 {
+    position: relative;
+    font-family: var(--primary-font);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    color: #0a0a0a;
+  }
+
+  #visual {
+    position: relative;
+    top: -1.9em;
+    left: -4.5em;
+  }
+
+  #ujmap {
+    position: relative;
+    top: -1.9em;
+    left: 4.5em;
+  }
+
+  #userrech {
+    position: relative;
+    top: -1.1em;
+    left: 6em;
+  }
+
+  #userflow {
+    position: relative;
+    top: -1.1em;
+    left: -6em;
+  }
+
+  #wireframe {
+    position: relative;
+    top: -0.3em;
+    left: -4.5em;
+  }
+
+  #prototyping {
+    position: relative;
+    top: -0.3em;
+    left: 4.5em;
+  }
+
+  #utesting {
+    position: relative;
+    top: 0.5em;
+    left: 6em;
+  }
+
+  #hevaluation {
+    position: relative;
+    top: 0.5em;
+    left: -6em;
+  }
+
+  #idesign {
+    position: relative;
+    top: 1.2em;
+    left: -4.5em;
+  }
+
+  #infoarch {
+    position: relative;
+    top: 1.2em;
+    left: 4.5em;
+  }
+
+  /* --SKILLSETS END-- */
+
+  /* --BOOKTRON START-- */
+
+  .booktron {
+    content: "";
+    position: relative;
+    display: grid;
+    max-width: 100%;
+    min-height: 821px;
+    top: 5.7em;
+    background-image: url(../images/Rectangle\ bg.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: initial;
+  }
+
+  .booktron .btmockup {
+    position: relative;
+    width: auto;
+    max-height: 25.046875rem;
+    top: -4.6em;
+    left: 2em;
+    -webkit-box-reflect: below 0px -webkit-gradient(linear, left top, left
+          bottom, from(transparent), color-stop(0.7, transparent), to(rgba(0, 0, 0, 0.2)));
+    grid-column: 1;
+  }
+
+  .booktron .booktron_content {
+    position: relative;
+    width: auto;
+    height: 31.5625rem;
+    top: -2.6em;
+    left: -4.2em;
+    grid-column: 2;
+  }
+
+  .booktron_tit {
+    position: relative;
+    width: 365px;
+    height: 68px;
+    left: -0.4em;
+  }
+
+  .booktron_tit img {
+    width: 4rem;
+    height: 4rem;
+  }
+
+  .booktron_tit h1 {
+    position: relative;
+    left: 0.375rem;
+    padding-top: 0.2rem;
+    min-width: 17.5625rem;
+    height: auto;
+    font-family: var(--primary-font);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 45px;
+    line-height: 68px;
+    letter-spacing: 0.1em;
+    color: #fdfbfb;
+  }
+
+  .booktron_content p {
+    position: relative;
+    width: 25.9375rem;
+    height: 22.4375rem;
+    top: 0.9em;
+    font-family: var(--primary-font);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 35px;
+    line-height: 72px;
+    letter-spacing: 0.05em;
+    color: #ffffff;
+  }
+
+  .booktron_content button {
+    width: 13.75rem;
+    height: 3.244375rem;
+    border-radius: 0.75rem;
+    top: 3em;
+  }
+
+  .booktron_content button span {
+    width: auto;
+    height: 72px;
+    font-size: 16px;
+    line-height: 72px;
+  }
+
+  /* --BOOKTRON END-- */
+
+  /* --BUTLER START-- */
+
+  .butler {
+    content: "";
+    position: relative;
+    display: grid;
+    max-width: 100%;
+    min-height: 653px;
+    top: 5em;
+  }
+
+  .butler .butler_content {
+    position: relative;
+    width: auto;
+    height: 505px;
+    left: 5em;
+    top: 0.2em;
+  }
+
+  .butler_tit {
+    position: relative;
+    width: 264px;
+    height: 95.84px;
+    left: -0.4em;
+    top: -0.3em;
+  }
+
+  .butler_tit img {
+    width: 4rem;
+    height: 4rem;
+  }
+
+  .butler_tit h1 {
+    position: relative;
+    left: 0.375rem;
+    padding-top: 0.2rem;
+    min-width: 11.25rem;
+    height: auto;
+    font-family: var(--primary-font);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 45px;
+    line-height: 68px;
+    letter-spacing: 0.1em;
+    color: #0a0a0a;
+  }
+
+  .butler_content p {
+    position: relative;
+    width: 26.9375rem;
+    height: 21rem;
+    top: 0.7em;
+    font-family: var(--primary-font);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 35px;
+    line-height: 72px;
+    letter-spacing: 0.05em;
+    color: #0a0a0a;
+  }
+
+  .butler_content button {
+    width: 13.75rem;
+    height: 3.244375rem;
+    border-radius: 0.75rem;
+    top: -0.5em;
+  }
+
+  .butler_content button span {
+    width: auto;
+    height: 72px;
+    font-size: 16px;
+    line-height: 72px;
+  }
+
+  .butler_mockup {
+    position: relative;
+    max-width: 20.714375rem;
+    height: 25rem;
+    top: -0.1em;
+    left: -1.5em;
+    -webkit-box-reflect: below 0px -webkit-gradient(linear, left top, left
+          bottom, from(transparent), color-stop(0.7, transparent), to(rgba(0, 0, 0, 0.2)));
+  }
+
+  /* --BUTLER END--*/
+
+  /* --GAME_CENTER START--*/
+
+  .game_center {
+    content: "";
+    position: relative;
+    display: grid;
+    max-width: 100%;
+    min-height: 821px;
+    top: 3.55em;
+    background-image: url(../images/Rectangle\ bg.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: initial;
+  }
+
+  .game_center .gc_mockup {
+    position: relative;
+    max-width: 21.875rem;
+    min-height: 13.220625rem;
+    top: -7.5em;
+    left: 2.5em;
+    grid-column: 1;
+  }
+
+  .game_center .gamecenter_content {
+    position: relative;
+    width: auto;
+    height: 476px;
+    left: -5.5em;
+    top: -0.8em;
+    grid-column: 2;
+  }
+
+  .game_center_tit img {
+    width: 4rem;
+    height: 4rem;
+  }
+
+  .game_center_tit h1 {
+    position: relative;
+    left: 0.375rem;
+    padding-top: 0.2rem;
+    min-width: 23rem;
+    height: auto;
+    font-family: var(--primary-font);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 45px;
+    line-height: 68px;
+    letter-spacing: 0.1em;
+    color: #fdfbfb;
+  }
+
+  .gamecenter_content p {
+    position: relative;
+    width: 27rem;
+    height: 18rem;
+    top: 0.9em;
+    font-family: var(--primary-font);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 35px;
+    line-height: 72px;
+    letter-spacing: 0.05em;
+    color: #ffffff;
+  }
+
+  .gamecenter_content button {
+    width: 13.75rem;
+    height: 3.244375rem;
+    border-radius: 0.75rem;
+    top: 2.9em;
+  }
+
+  .gamecenter_content button span {
+    width: auto;
+    height: 72px;
+    font-size: 16px;
+    line-height: 72px;
+  }
+
+  /* --GAME_CENTER END-- */
+
+  /* --OTHER WORKS Section START-- */
+
+  .other_works {
+    position: relative;
+    top: -4.3em;
+  }
+
+  .other_works h1 {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: auto;
+    height: 2.25rem;
+    top: 14.5rem;
+    font-family: var(--primary-font);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 38px;
+    line-height: 36px;
+    letter-spacing: 0.1em;
+    color: #0a0a0a;
+  }
+
+  .container1 {
+    position: relative;
+    top: -11.6rem;
+  }
+
+  #grid1 {
+    position: relative;
+    display: grid;
+    min-width: 100%;
+    max-height: 50rem;
+    background-image: url(../images/Rectangle\ bg.svg);
+    background-repeat: repeat;
+    background-position: center;
+    background-size: cover;
+    gap: 50px 15rem;
+    place-items: center;
+    justify-items: center;
+  }
+
+  .images {
+    width: 21.875rem;
+    height: 28.45625rem;
+  }
+
+  #otherwork1 {
+    position: relative;
+    top: -10.2rem;
+    left: 3.3rem;
+    z-index: 1;
+  }
+
+  #otherwork2 {
+    position: relative;
+    top: -7.3rem;
+    left: -3.3rem;
+    z-index: 1;
+  }
+  #otherwork3 {
+    position: relative;
+    top: -4.2rem;
+    left: 3.3rem;
+    z-index: 1;
+  }
+  #otherwork4 {
+    position: relative;
+    top: -1.4rem;
+    left: -3.3rem;
+    z-index: 1;
+  }
+
+  .otherworks_btn1 {
+    width: 21.875rem;
+    height: 2.79375rem;
+  }
+
+  .otherworks_btn1 span {
+    font-size: 14px;
+    line-height: 36px;
+  }
+
+  .otherworks_btn2 {
+    width: 21.875rem;
+    height: 2.79375rem;
+    background: #1e1e1e !important;
+  }
+
+  .otherworks_btn2 span {
+    font-size: 14px;
+    line-height: 36px;
+    color: #fcfcfc !important;
+  }
+
+  .other_works .container1 .vertical_heading {
+    display: block;
+    position: relative;
+    width: auto;
+    height: auto;
+    top: 56rem;
+    z-index: 1;
+  }
+
+  .other_works .container1 .vertical_heading h4 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    place-items: center;
+    font-family: var(--primary-font);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    letter-spacing: 0.1em;
+    color: #fcfcfc;
+  }
+
+  /* --OTHER WORKS Section END-- */
+
+  /* --LOGO WORKS Section START-- */
+
+  .logo_works {
+    position: relative;
+    top: -4.3em;
+  }
+
+  .container2 {
+    position: relative;
+    top: -11.6rem;
+  }
+
+  #grid2 {
+    position: relative;
+    display: grid;
+    width: 100%;
+    height: 50rem;
+    background-image: url(../images/Rectangle\ bg.svg);
+    background-repeat: repeat;
+    background-size: cover;
+    background-position: center;
+    gap: 50px 15rem;
+    place-items: center;
+    justify-items: center;
+  }
+
+  .logo_images {
+    width: 21.875rem;
+    height: 28.45625rem;
+  }
+
+  #logo_otherwork1 {
+    position: relative;
+    top: -9rem;
+    left: 3.3rem;
+    z-index: 1;
+  }
+  #logo_otherwork2 {
+    position: relative;
+    top: -6.2rem;
+    left: -3.3rem;
+    z-index: 1;
+  }
+  #logo_otherwork3 {
+    position: relative;
+    top: -3rem;
+    left: 3.3rem;
+    z-index: 1;
+  }
+  #logo_otherwork4 {
+    position: relative;
+    top: -0.1rem;
+    left: -3.3rem;
+    z-index: 1;
+  }
+
+  .logo_otherworks_btn1 {
+    width: 21.875rem;
+    height: 2.79375rem;
+  }
+
+  .logo_otherworks_btn2 {
+    position: relative;
+    width: 21.875rem;
+    height: 2.79375rem;
+    background: #1e1e1e !important;
+    top: -0.1em;
+  }
+
+  .logo_otherworks_btn1 span {
+    font-size: 14px;
+    line-height: 36px;
+  }
+
+  .logo_otherworks_btn2 span {
+    font-size: 14px;
+    line-height: 36px;
+    color: #fcfcfc !important;
+  }
+
+  .logo_works .container2 .vertical_logo_heading {
+    position: relative;
+    display: block;
+    width: auto;
+    height: auto;
+    top: 53.3rem;
+    z-index: 1;
+  }
+
+  .logo_works .container2 .vertical_logo_heading h4 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    place-items: center;
+    align-items: center;
+    font-family: var(--primary-font);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    color: #fcfcfc;
+  }
+
+  /* --LOGO WORKS Section END-- */
+
+  /* --FOOTER SECTION START-- */
+
+  footer {
+    position: relative;
+    width: 100%;
+    height: 49.3125rem;
+    top: 15.7em;
+    background-image: url(../images/CONTACT\ ME\ bg.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: initial;
+  }
+
+  .footer_content .footer_top_heading {
+    font-size: 38px;
+    line-height: 54px;
+    top: 2.7em;
+  }
+
+  .footer_content .socials_platforms img {
+    max-width: 5.25rem;
+    height: 5.831875rem;
+  }
+
+  .footer_content .socials_platforms {
+    top: 13.8rem;
+  }
+
+  .footer_content .footer_bottom_heading {
+    width: 49.125rem;
+    font-size: 28px;
+    line-height: 36px;
+    letter-spacing: 0.1em;
+    top: 25.6rem;
+  }
+
+  .socials_platforms a:nth-of-type(odd) {
+    top: 3.2rem;
+  }
+
+  /* --FOOTER SECTION END-- */
+}
+
+@media screen and (min-width: 1200px) {
+  .content {
+    top: 18em;
+  }
+
+  #grid1 {
+    gap: 30px 380px;
+  }
+  #grid2 {
+    gap: 30px 380px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  /* Navbar Start */
+
+  .header_wrapper {
+    position: relative;
+    top: 0.9em;
+  }
+
+  .header_wrapper .nav-item {
+    margin: 0 25px 0 50px;
+  }
+
+  /* Navbar End */
+
+  /* Banner Start */
+
+  .banner_wrapper {
+    position: relative;
+    min-width: 100%;
+    min-height: 43.125rem;
+  }
+
+  .content h1 {
+    /* Kartik Mahawar */
+
+    position: relative;
+    width: 100%;
+    height: auto;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 72px;
+    text-align: center;
+    letter-spacing: 9.6px;
+    color: #0a0a0a;
+  }
+
+  .content p {
+    /* “A designer who lives by ethics.” */
+    position: relative;
+    width: 750px;
+    height: auto;
+    top: 1em;
+    left: -.5em;
+    font-family: "Planet N";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 50px;
+    letter-spacing: 3.6px;
+    text-align: center;
+    color: #0a0a0a;
+  }
+
+  .content {
+    top: 18em;
+    left: -20em;
+  }
+
+  /* Banner End */
+
+  /* --ABOUT_ME START--*/
+
+  .about_me {
+    position: relative;
+    min-width: 100%;
+    min-height: 52.4rem;
+    background-image: url("../images/ABOUT ME.webp");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: initial;
+    top: -5em;
+  }
+
+  .about_me .content1 h1 {
+    top: 1.1em;
+    font-family: var(--primary-font);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 36px;
+    letter-spacing: 0.1em;
+  }
+
+  .about-me-content {
+    top: -2.8em;
+  }
+
+  .about-me-content h3 {
+    font-size: 36px;
+    line-height: 54px;
+    top: 10.5em;
+  }
+
+  .about-me-content h4 {
+    position: relative;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 54px;
+    letter-spacing: 0.05em;
+    color: #fcfcfc;
+    top: 16.3em;
+  }
+
+  .about-me-content p {
+    top: 25.2em;
+  }
+
+  /* --ABOUT_ME END-- */
+
+  /* --SKIILLSETS START-- */
+
+  .skillset {
+    position: relative;
+    top: -5em;
+  }
+
+  .skillset .container .content2 span {
+    font-size: 48px;
+    line-height: 36px;
+  }
+
+  .grid {
+    position: relative;
+    display: grid;
+    width: 1140px;
+    height: 625.49px;
+    top: 12em;
+    background-image: url("../images/desktopskillsetbg.webp");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 1060.22px 532.49px;
+    grid-template-columns: auto auto;
+  }
+
+  .rectangle img {
+    position: relative;
+    top: -0.0001em;
+  }
+
+  .rectangle h4 {
+    position: relative;
+    top: 0.48em;
+  }
+
+  #visual {
+    position: relative;
+    left: -11em;
+    top: -2.5em;
+  }
+
+  #ujmap {
+    position: relative;
+    left: 11em;
+    top: -2.5em;
+  }
+
+  #userrech {
+    position: relative;
+    left: -0.8em;
+    top: -2.5em;
+  }
+
+  #userflow {
+    position: relative;
+    left: 0.8em;
+    top: -2.5em;
+  }
+
+  #wireframe {
+    position: relative;
+    left: -11em;
+    top: -2.5em;
+  }
+
+  #prototyping {
+    position: relative;
+    left: 11em;
+    top: -2.5em;
+  }
+
+  #utesting {
+    position: relative;
+    left: -0.8em;
+    top: -2.5em;
+  }
+
+  #hevaluation {
+    position: relative;
+    left: 0.8em;
+    top: -2.5em;
+  }
+
+  #idesign {
+    position: relative;
+    left: -11em;
+    top: -2.5em;
+  }
+
+  #infoarch {
+    position: relative;
+    left: 11em;
+    top: -2.5em;
+  }
+
+  /* --SKILLSETS END-- */
+
+  /* --BOOKTRON START-- */
+
+  .booktron {
+    position: relative;
+    display: grid;
+    max-width: 100%;
+    min-height: 1000px;
+    top: 11.8em;
+  }
+
+  .booktron_tit img {
+    width: 4.75rem;
+    height: 4.75rem;
+  }
+
+  .booktron_tit h1 {
+    left: 0.4em;
+    font-size: 48px;
+    line-height: 72px;
+  }
+
+  .booktron_content p {
+    position: relative;
+    width: 460px;
+    height: 359.41px;
+    top: 4rem;
+    font-family: var(--primary-font);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 45px;
+    line-height: 72px;
+    letter-spacing: 0.05em;
+    color: #ffffff;
+  }
+
+  .booktron_content button {
+    width: 16.25rem;
+    height: 3.244375rem;
+    border-radius: 1rem;
+    top: 7rem;
+  }
+
+  .booktron_tit {
+    left: 0.09em;
+  }
+
+  .booktron .booktron_content {
+    left: -5.3em;
+  }
+
+  .booktron .btmockup {
+    width: auto;
+    max-height: 37.5rem;
+    top: -2.3em;
+    left: 3.6em;
+  }
+
+  /* --BOOKTRON END-- */
+
+  /* --BUTLER START-- */
+
+  .butler {
+    max-width: 100%;
+    min-height: 918px;
+    top: 14.2em;
+  }
+
+  .butler .butler_content {
+    width: auto;
+    height: 607px;
+    left: 4.8em;
+    top: -1.5em;
+  }
+
+  .butler_tit img {
+    width: 4.75rem;
+    height: 4.75rem;
+  }
+
+  .butler_tit h1 {
+    left: 0.4em;
+    font-size: 48px;
+    line-height: 72px;
+  }
+
+  .butler_tit {
+    width: 288.04px;
+    height: 76px;
+  }
+
+  .butler_content p {
+    position: relative;
+    width: 31.4375rem;
+    height: 22.463125rem;
+    top: 1.2em;
+    font-family: var(--primary-font);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 45px;
+    line-height: 72px;
+    letter-spacing: 0.05em;
+    color: #0a0a0a;
+  }
+
+  .butler_content button {
+    width: 16.25rem;
+    height: 3.244375rem;
+    border-radius: 1rem;
+    top: 5.6em;
+  }
+
+  .butler_mockup {
+    max-width: 31.02rem;
+    height: 37.4375rem;
+    top: -2.4em;
+    left: -4.2em;
+  }
+
+  /* --BUTLER END--*/
+
+  /* --GAME_CENTER START--*/
+
+  .game_center {
+    max-width: 100%;
+    min-height: 1000px;
+    top: 14.3em;
+  }
+
+  .game_center .gc_mockup {
+    max-width: 34.375rem;
+    min-height: 20.775rem;
+    top: -6.45em;
+    left: 6.4em;
+  }
+
+  .game_center_tit img {
+    width: 4.75rem;
+    height: 4.75rem;
+  }
+
+  .game_center_tit h1 {
+    left: 0.4em;
+    font-size: 48px;
+    line-height: 72px;
+  }
+
+  .gamecenter_content p {
+    position: relative;
+    width: 31.4375rem;
+    height: 18rem;
+    top: 1em;
+    font-family: var(--primary-font);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 45px;
+    line-height: 72px;
+    letter-spacing: 0.05em;
+    color: #ffffff;
+  }
+
+  .gamecenter_content button {
+    width: 16.25rem;
+    height: 3.244375rem;
+    border-radius: 1rem;
+    top: 5em;
+  }
+
+  .game_center_tit {
+    position: relative;
+    left: -1.4em;
+  }
+
+  .game_center .gamecenter_content {
+    left: -1.4em;
+    top: -1.5em;
+  }
+
+  /* --GAME_CENTER END-- */
+
+  /* --OTHER WORKS Section START-- */
+
+  .other_works {
+    position: relative;
+    top: 6.8em;
+  }
+
+  .other_works h1 {
+    font-size: 48px;
+  }
+
+  #grid1 {
+    min-width: 100%;
+    min-height: 62.5rem;
+    top: 6.8em;
+    gap: 50px 30rem;
+  }
+
+  .images {
+    width: 28.125rem;
+    height: 34.375rem;
+  }
+
+  #otherwork1 {
+    position: relative;
+    top: -9.7rem;
+    left: 8.6rem;
+    z-index: 1;
+  }
+
+  #otherwork2 {
+    position: relative;
+    top: -6.2rem;
+    left: -8.6rem;
+    z-index: 1;
+  }
+  #otherwork3 {
+    position: relative;
+    top: -3.4rem;
+    left: 8.6rem;
+    z-index: 1;
+  }
+  #otherwork4 {
+    position: relative;
+    top: -0.3rem;
+    left: -8.6rem;
+    z-index: 1;
+  }
+
+  .otherworks_btn1 {
+    width: 28.125rem;
+    height: 3.125rem;
+  }
+
+  .otherworks_btn1 span {
+    font-size: 16px;
+    line-height: 36px;
+  }
+
+  .otherworks_btn2 {
+    width: 28.125rem;
+    height: 3.125rem;
+  }
+
+  .otherworks_btn2 span {
+    font-size: 16px;
+    line-height: 36px;
+  }
+
+  .other_works .container1 .vertical_heading {
+    top: 56.95rem;
+    z-index: 1;
+  }
+
+  .other_works .container1 .vertical_heading h4 {
+    font-size: 24px;
+    line-height: 36px;
+    letter-spacing: 0.1em;
+  }
+
+  /* --OTHER WORKS Section END-- */
+
+  /* --LOGO WORKS Section START-- */
+
+  .logo_works {
+    position: relative;
+    top: 7.5em;
+  }
+
+  #grid2 {
+    min-width: 100%;
+    min-height: 62.5rem;
+    top: 3.2em;
+    gap: 50px 30rem;
+  }
+
+  .logo_images {
+    width: 28.125rem;
+    height: 34.375rem;
+  }
+
+  #logo_otherwork1 {
+    position: relative;
+    top: -9.8rem;
+    left: 8.6rem;
+    z-index: 1;
+  }
+  #logo_otherwork2 {
+    position: relative;
+    top: -6.37rem;
+    left: -8.6rem;
+    z-index: 1;
+  }
+  #logo_otherwork3 {
+    position: relative;
+    top: -3.5rem;
+    left: 8.6rem;
+    z-index: 1;
+  }
+  #logo_otherwork4 {
+    position: relative;
+    top: -0.1rem;
+    left: -8.6rem;
+    z-index: 1;
+  }
+
+  .logo_otherworks_btn1 {
+    width: 28.125rem;
+    height: 3.125rem;
+  }
+
+  .logo_otherworks_btn1 span {
+    font-size: 16px;
+    line-height: 36px;
+  }
+
+  .logo_otherworks_btn2 {
+    width: 28.125rem;
+    height: 3.125rem;
+  }
+
+  .logo_otherworks_btn2 span {
+    font-size: 16px;
+    line-height: 36px;
+  }
+
+  .logo_works .container2 .vertical_logo_heading {
+    top: 50.6rem;
+    z-index: 1;
+  }
+
+  .logo_works .container2 .vertical_logo_heading h4 {
+    font-size: 24px;
+    line-height: 36px;
+    letter-spacing: 0.1em;
+  }
+
+  /* --LOGO WORKS Section END-- */
+
+  /* --FOOTER SECTION START-- */
+
+  footer {
+    width: 100%;
+    height: 50rem;
+    top: 17.6em;
+  }
+
+  .footer_content .footer_top_heading {
+    font-size: 48px;
+    line-height: 36px;
+    top: 2.1em;
+  }
+
+  .footer_content .socials_platforms {
+    top: 15.2rem;
+  }
+
+  .footer_content .footer_bottom_heading {
+    width: 56.125rem;
+    font-size: 32px;
+    line-height: 36px;
+    letter-spacing: 0.1em;
+    top: 27.1rem;
+  }
+
+  .devName {
+    position: relative;
+    top: 37rem;
+  }
+
+  .devName span {
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  /* --FOOTER SECTION END-- */
+}
+
+@media screen and (min-width: 1716px) {
+  .header_wrapper .navbar-brand img {
+    position: relative;
+    left: -5.3em;
+  }
+
+  .header_wrapper .nav-item {
+    position: relative;
+    right: -8.8em;
+  }
+
+  .content {
+    position: relative;
+    left: -22em;
+    top: 20em;
+  }
+
+  .content h1 {
+    /* Kartik Mahawar */
+
+    position: relative;
+    font-size: 62px;
+  }
+
+  .content p {
+    /* “A designer who lives by ethics.” */
+
+    position: relative;
+    width: 1000px;
+    height: auto;
+    font-size: 32px;
+    line-height: 72px;
+  }
+
+  .about_me {
+    position: relative;
+    min-width: 100%;
+    min-height: 999.81px;
+    top: -5em;
+  }
+
+  .about_me .content1 h1 {
+    font-size: 62px;
+    line-height: 36px;
+    top: 1.2em;
+  }
+
+  .about-me-content h6 {
+    /* “My design communicates” */
+
+    position: relative;
+    top: 15em;
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .about-me-content img {
+    position: relative;
+    top: 18.5em;
+    width: 150px;
+  }
+
+  .about-me-content h3 {
+    position: relative;
+    font-size: 36px;
+    line-height: 72px;
+    top: 8.95em;
+  }
+
+  .about-me-content h4 {
+    position: relative;
+    font-size: 26px;
+    line-height: 54px;
+    top: 13.4em;
+  }
+
+  .about-me-content p {
+    position: relative;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+    top: 15.6em;
+  }
+
+  .about_me .about-me-content {
+    position: relative;
+    top: -1.2rem;
+  }
+
+  /* --SKILLSETS START-- */
+
+  .skillset .container .content2 span {
+    font-size: 62px;
+    line-height: 72px;
+  }
+
+  .skillset .container .grid {
+    position: relative;
+    display: grid;
+    top: 13em;
+  }
+
+  .rectangle img {
+    position: relative;
+    top: -0.0001em;
+  }
+
+  .rectangle h4 {
+    position: relative;
+    top: 0.48em;
+  }
+
+  #visual {
+    position: relative;
+    left: -11em;
+    top: -4.5em;
+  }
+
+  #ujmap {
+    position: relative;
+    left: 11em;
+    top: -4.5em;
+  }
+
+  #userrech {
+    position: relative;
+    left: 3em;
+    top: -3.5em;
+  }
+
+  #userflow {
+    position: relative;
+    left: -3em;
+    top: -3.5em;
+  }
+
+  #wireframe {
+    position: relative;
+    left: -11em;
+    top: -2.5em;
+  }
+
+  #prototyping {
+    position: relative;
+    left: 11em;
+    top: -2.5em;
+  }
+
+  #utesting {
+    position: relative;
+    left: 3em;
+    top: -1.5em;
+  }
+
+  #hevaluation {
+    position: relative;
+    left: -3em;
+    top: -1.5em;
+  }
+
+  #idesign {
+    position: relative;
+    left: -11em;
+    top: -0.5em;
+  }
+
+  #infoarch {
+    position: relative;
+    left: 11em;
+    top: -0.5em;
+  }
+
+  /* --SKILLSETS END-- */
+
+  .booktron {
+    position: relative;
+    top: 15em;
+  }
+
+  .grid {
+    position: relative;
+    display: grid;
+    width: auto;
+    height: auto;
+    top: 11em;
+    place-items: center;
+  }
+
+  .other_works h1 {
+    height: 4rem;
+    top: 13.3rem;
+    font-size: 62px;
+    line-height: 72px;
+  }
+
+  #otherwork1,
+  #otherwork3,
+  #logo_otherwork1,
+  #logo_otherwork3 {
+    left: 9.4rem;
+  }
+
+  #otherwork2,
+  #otherwork4,
+  #logo_otherwork2,
+  #logo_otherwork4 {
+    left: -9.4rem;
+  }
+}
